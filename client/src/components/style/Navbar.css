@@ -71,6 +71,7 @@
 .navbar__menu-register {
   text-decoration: none;
   padding: 8px 12px;
+  margin-right: 10px;
 
   color: #fff;
   font-family: Lato;
@@ -80,10 +81,4 @@
   line-height: 24px; /* 150% */
   border-radius: 50px;
   background: #465c7c;
-}
-
-.navbar__menu-hamburger {
-  background: inherit;
-  height: 35px;
-  margin: 10px;
 }

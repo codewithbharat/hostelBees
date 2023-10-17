@@ -26,7 +26,6 @@ const Navbar = () => {
 
                     <Link to="/register" className="navbar__menu-register">Join Now</Link>
 
-                    <img src={NavhamburgerMenu} alt="" className="navbar__menu-hamburger" />
                 </div>
             </div>
         </>

@@ -1,5 +1,5 @@
 .home {
-  margin-top: 5px;
+  margin-top: 60px;
 }
 
 .hero {
@@ -20,10 +20,10 @@
 
 .hero__text {
   background-color: #334875;
-  width: 60%;
+  width: 50%;
   margin: 30px;
   padding: 30px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 .hero__text h1 {
@@ -40,7 +40,7 @@
 .hero__text p {
   background-color: inherit;
   margin: 10px 0;
-
+  padding: 15px 0;
   color: #ffffffb0;
   font-family: Lato;
   font-size: 13.183px;
