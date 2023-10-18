@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300&display=swap");
 .home {
   margin-top: 60px;
 }
@@ -80,7 +81,7 @@
 }
 
 .hero__img img {
-  height: 500px;
+  height: 100%;
   width: 100%;
 }
 
@@ -151,6 +152,56 @@
 }
 
 .info__img img {
+  height: 80%;
+  width: 80%;
+}
+
+.tut {
+  background-color: #fff;
+  max-width: 100%;
   height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.tut__textbox {
+  background-color: inherit;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tut__textbox__text {
+  background-color: inherit;
+  width: 60%;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.tut__textbox__text p {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28.5px; /* 183.333% */
+}
+
+.tut__video {
+  background-color: inherit;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tut__video img {
+  height: 80%;
   width: 80%;
 }

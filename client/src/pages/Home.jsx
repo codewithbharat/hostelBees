@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 import hero from './assets/home_hero.png'
 import info from './assets/home_info.png'
+import tut from './assets/home_tut.jpg'
+
 const Home = () => {
     return (
         <div className='home'>
@@ -33,6 +35,18 @@ const Home = () => {
                 </div>
                 <div className="info__img">
                     <img src={info} alt="" />
+                </div>
+            </div>
+            <div className="tut">
+                <div className="tut__textbox">
+                    <div className="tut__textbox__text">
+                        <p>
+                            Our 'One Solution for Everyone' philosophy means that whether you're an institute administrator looking to simplify administrative tasks, a student eager to make hostel life a breeze, a warden responsible for student well-being, or a support staff member striving for operational excellence, Hosteler is here to streamline and elevate your experience. We believe in providing a unified, user-friendly platform that brings everyone together to create a well-managed, comfortable, and secure hostel environment.
+                        </p>
+                    </div>
+                </div>
+                <div className="tut__video">
+                    <img src={tut} alt="" />
                 </div>
             </div>
         </div>
