@@ -205,3 +205,72 @@
   height: 80%;
   width: 80%;
 }
+
+.userExp {
+  background-color: inherit;
+}
+
+.userExp__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px; /* 36.364% */
+  letter-spacing: 1px;
+}
+
+.userExp__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratingCard {
+  box-shadow: -1px 0px 3px 0px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  width: 250px;
+  height: 350px;
+  margin: 30px;
+  padding: 30px;
+}
+
+.ratingCard h3 {
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 76.923% */
+  letter-spacing: 1.5px;
+}
+
+.ratingCard p {
+  padding: 30px 0;
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 100% */
+  letter-spacing: 1.5px;
+}
+
+.ratingCard span {
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 100% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

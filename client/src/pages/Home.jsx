@@ -6,7 +6,36 @@ import hero from './assets/home_hero.png'
 import info from './assets/home_info.png'
 import tut from './assets/home_tut.jpg'
 
+const RatingCard = (props) => {
+    return (
+        <div className="ratingCard">
+            <h3>{props.name}</h3>
+            <p>{props.des}</p>
+            <span>{props.inst}</span>
+        </div>
+    )
+}
+
 const Home = () => {
+
+    const ratings = [{
+        name: "Bharat Ranjan",
+        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur repellat et, tempore dolore sed nesciunt distinctio autem eaque magni.",
+        inst: "spnrec"
+    }, {
+        name: "Md. Aarju Khan",
+        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur repellat et, tempore dolore sed nesciunt distinctio autem eaque magni.",
+        inst: "spnrec"
+    },
+    {
+        name: "Priyanshu Anaand",
+        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur repellat et, tempore dolore sed nesciunt distinctio autem eaque magni.",
+        inst: "spnrec"
+    },
+    ];
+
+
+
     return (
         <div className='home'>
             <div className="hero">
@@ -49,8 +78,31 @@ const Home = () => {
                     <img src={tut} alt="" />
                 </div>
             </div>
+            <div className="userExp">
+                <div className="userExp__heading">
+                    <h2>Our User's Experiences</h2>
+                </div>
+                <div className="userExp__cards">
+                    <RatingCard
+                        name="Bharat Ranjan"
+                        des="'Incorporating Hosteler into our hostel management system has been a game-changer for our institution. This platform offers a tailored solution that simplifies room allocation, fee management, and staff oversight. The custom institute page streamlines all administrative tasks, making hostel management efficient and hassle-free. Hosteler has truly elevated our operations.'"
+                        inst="SPNREC, Araria" />
+                    <RatingCard
+                        name="Md. Aarju Khan"
+                        des="'Hosteler has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend Hosteler to other educational institutes seeking a comprehensive and user-friendly solution.'"
+                        inst="spnrec , araria"
+                    />
+                    <RatingCard
+                        name="Priyanshu Anand"
+                        des="'Hosteler has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend Hosteler to other educational institutes seeking a comprehensive and user-friendly solution.'"
+                        inst="spnrec , araria"
+                    />
+
+                </div>
+            </div>
         </div>
     )
 }
 
 export default Home
+
