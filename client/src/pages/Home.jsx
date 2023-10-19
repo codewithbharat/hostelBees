@@ -97,8 +97,16 @@ const Home = () => {
                         des="'Hosteler has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend Hosteler to other educational institutes seeking a comprehensive and user-friendly solution.'"
                         inst="spnrec , araria"
                     />
-
                 </div>
+            </div>
+            <div className="reqCall">
+                <h1>Request Call Back</h1>
+                <form>
+                    <input className="input" placeholder='YOUR NAME' type="text" name="name" />
+                    <input className="input" placeholder='YOUR EMAIL' type="text" name="name" />
+                    <input className="input" placeholder='YOUR PHONE NO.' type="text" name="name" />
+                    <input className="callback" type="submit" value="CALL BACK" />
+                </form>
             </div>
         </div>
     )

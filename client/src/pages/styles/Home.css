@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@600&family=Roboto:wght@300&display=swap");
+
 .home {
   margin-top: 60px;
 }
@@ -272,5 +274,51 @@
   font-weight: 300;
   line-height: 20px; /* 100% */
   letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.reqCall {
+  background-color: #334875;
+  margin: 2% 5%;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reqCall h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px; /* 57.5% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.reqCall .input {
+  border-radius: 15px;
+  background: #ebebeb;
+  padding: 15px;
+  margin: 0 10px;
+  margin-top: 25px;
+  border: none;
+}
+
+.reqCall .callback {
+  border-radius: 18px;
+  background: #77c043;
+  padding: 15px 25px;
+
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 64% */
+  letter-spacing: 1.4px;
   text-transform: uppercase;
 }
