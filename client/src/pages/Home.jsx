@@ -16,26 +16,16 @@ const RatingCard = (props) => {
     )
 }
 
+const ServiceCard = (props) => {
+    return (
+        <div className="serviceCard">
+            <h3>{props.name}</h3>
+            <p>{props.des}</p>
+        </div>
+    )
+}
+
 const Home = () => {
-
-    const ratings = [{
-        name: "Bharat Ranjan",
-        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur repellat et, tempore dolore sed nesciunt distinctio autem eaque magni.",
-        inst: "spnrec"
-    }, {
-        name: "Md. Aarju Khan",
-        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur repellat et, tempore dolore sed nesciunt distinctio autem eaque magni.",
-        inst: "spnrec"
-    },
-    {
-        name: "Priyanshu Anaand",
-        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consequatur repellat et, tempore dolore sed nesciunt distinctio autem eaque magni.",
-        inst: "spnrec"
-    },
-    ];
-
-
-
     return (
         <div className='home'>
             <div className="hero">
@@ -107,6 +97,19 @@ const Home = () => {
                     <input className="input" placeholder='YOUR PHONE NO.' type="text" name="name" />
                     <input className="callback" type="submit" value="CALL BACK" />
                 </form>
+            </div>
+            <div className="services">
+                <h2>What we Provide</h2>
+                <div className="services__cards">
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                    <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
+                </div>
             </div>
         </div>
     )
