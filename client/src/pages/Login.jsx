@@ -3,6 +3,8 @@ import React from 'react'
 import './styles/Login.css'
 import { Link } from 'react-router-dom'
 
+import logo from './assets/logo.png'
+
 const Login = () => {
     return (
         <div className="login">
@@ -23,7 +25,11 @@ const Login = () => {
                     </div>
                 </form>
             </div>
-            <div className="login__info"></div>
+            <div className="login__info">
+                <img src={logo} alt="" />
+                <h2>"Welcome back to Hosteler"</h2>
+                <p>Your hub for seamless hostel management. Ready to get started? Please sign in to your account.</p>
+            </div>
         </div>
     )
 }
