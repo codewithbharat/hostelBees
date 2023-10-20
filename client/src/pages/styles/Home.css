@@ -364,8 +364,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
-  line-height: 10px; /* 66.667% */
-  line-height: 15px; /* 66.667% */
+  line-height: 18px; /* 66.667% */
   letter-spacing: 1.5px;
 }
 
