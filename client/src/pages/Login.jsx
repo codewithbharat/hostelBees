@@ -10,7 +10,7 @@ const Login = () => {
         <div className="login">
             <div className="login__form">
                 <form action="">
-                    <h2>log in</h2>
+                    <h2>Institute Login</h2>
                     <label>email/phone no.
                         <input type="text" name="" id="" placeholder='email/phone no.' required />
                     </label>
