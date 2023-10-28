@@ -31,7 +31,7 @@ const Home = () => {
             <div className="hero">
                 <div className="hero_textBox">
                     <div className="hero__text">
-                        <h1>All-in-one Hostel Managment System for institutes</h1>
+                        <h1>India's best Hostel Managment system</h1>
                         <p>"Hosteler" is an all-in-one hostel management solution designed to streamline and simplify the management of hostel facilities within educational institutes.</p>
                         <div className="hero__text__buttons">
                             <Link className='a'>Know more about us</Link>
