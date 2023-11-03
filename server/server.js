@@ -5,14 +5,8 @@ require('dotenv').config();
 
 const port = process.env.PORT;
 
-const mongoose = require('./db');
+const mongoose = require('./utils/db');
 
-require('dotenv').config();
-
-// It's a test route
-app.get('/test', (req, res) => {
-    res.send('Hello, Express.js!');
-});
 
 // Start the server
 app.listen(port, () => {

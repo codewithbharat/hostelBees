@@ -1,8 +1,8 @@
 .footer {
   background-color: #151b26;
   width: 100%;
-  /* position: absolute;
-  bottom: 0; */
+  position: relative;
+  z-index: 3;
 }
 
 .footer__links {
