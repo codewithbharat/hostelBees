@@ -211,3 +211,61 @@
   letter-spacing: 1px;
   padding: 10%;
 }
+
+@media (max-width: 480px) {
+  .about__info__content {
+    flex-direction: column;
+  }
+
+  .about__info__content__text {
+    width: 80%;
+  }
+
+  .about__info__content__text p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .about__info__content__img {
+    width: 80%;
+    margin-top: -90px;
+  }
+
+  .about__info__content__img p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .about__team {
+    margin-top: -20px;
+  }
+
+  .about__team h2 {
+    font-size: 20px;
+  }
+
+  .about__goals {
+    margin-top: 10px;
+  }
+
+  .about__goals h2 {
+    font-size: 37px;
+  }
+
+  .about__goals__content {
+    flex-direction: column;
+  }
+
+  .about__goals__content-img {
+    width: 100%;
+  }
+
+  .about__goals__content-text {
+    width: 80%;
+  }
+
+  .about__goals__content-text p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
