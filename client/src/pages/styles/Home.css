@@ -470,4 +470,37 @@
   .tut__video {
     width: 100%;
   }
+
+  .userExp__heading {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .reqCall h1 {
+    font-size: 25px;
+  }
+
+  .reqCall .input {
+    width: 80%;
+  }
+
+  .reqCall .callback {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .services h2 {
+    font-size: 30px;
+  }
+
+  .services__cards {
+    margin: 0 10px;
+  }
+
+  .serviceCard {
+    margin: 0px;
+    margin-top: 20px;
+    width: 60%;
+  }
 }
