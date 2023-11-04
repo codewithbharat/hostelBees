@@ -68,7 +68,7 @@ const Home = () => {
                     <img src={tut} alt="" />
                 </div>
             </div>
-            <div className="userExp">
+            {/* <div className="userExp">
                 <div className="userExp__heading">
                     <h2>Our User's Experiences</h2>
                 </div>
@@ -110,7 +110,7 @@ const Home = () => {
                     <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
                     <ServiceCard name="Dedicated Institue Pages" des="Personalized Portals for each Institue, featuring institute-specific branding and functionalities." />
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
