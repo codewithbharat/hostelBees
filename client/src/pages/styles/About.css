@@ -98,12 +98,14 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
+  text-decoration: underline;
+
   line-height: 30px; /* 250% */
   letter-spacing: 2px;
 }
 
 .about__team__cards {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 90%;
 
   display: flex;
