@@ -3,7 +3,7 @@ import './App.css'
 // importing react-router-dom 
 import { Routes, Route } from "react-router-dom";
 
-import { Home, About, Contact, Login, Register, NotFound, Services } from "./pages";
+import { Home, About, Contact, Login, Register, NotFound } from "./pages";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
