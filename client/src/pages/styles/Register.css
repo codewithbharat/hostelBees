@@ -148,3 +148,23 @@
   letter-spacing: 1.5px;
   width: 70%;
 }
+
+@media (max-width: 480px) {
+  .register__form {
+    width: 100%;
+  }
+
+  .register__form h2 {
+    font-size: 24px;
+  }
+
+  .register__form form {
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px 1px #00000036;
+  }
+
+  .register__info {
+    display: none;
+  }
+}
