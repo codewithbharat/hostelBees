@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/About.css'
 
+import goal from './assets/about_goal.png'
 
 
 const About = () => {
@@ -67,7 +68,20 @@ const About = () => {
                     })}
                 </div>
             </div>
-
+            <div className="about__goals">
+                <svg viewBox="0 0 1440 320"><path fill="#b3d9f6" fill-opacity="1" d="M0,96L26.7,117.3C53.3,139,107,181,160,186.7C213.3,192,267,160,320,149.3C373.3,139,427,149,480,160C533.3,171,587,181,640,181.3C693.3,181,747,171,800,176C853.3,181,907,203,960,202.7C1013.3,203,1067,181,1120,192C1173.3,203,1227,245,1280,256C1333.3,267,1387,245,1413,234.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+                <h2>Our Mission</h2>
+                <div className="about__goals__content">
+                    <div className="about__goals__content-img">
+                        <img src={goal} alt="" />
+                    </div>
+                    <div className="about__goals__content-text">
+                        <p>
+                            "At HOSTELERS, our mission is to empower educational institutions, hostel wardens, and students with a modern and intuitive hostel management system. We are committed to streamlining hostel operations, enhancing the hostel experience, and simplifying the day-to-day tasks of administrators and residents. We strive to create a dynamic and supportive platform that brings efficiency and convenience to hostel life, making it an enriching and hassle-free experience for everyone we serve."
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
