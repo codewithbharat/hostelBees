@@ -1,18 +1,41 @@
 import React from 'react'
 import './styles/About.css'
 
-import teamImg from "./assets/team/demo.png";
+
+
 const About = () => {
+    const Team = [{
+        name: "Bharat Ranjan",
+        role: "Founder & Developer",
+        img: "./assets/team/bharat.jpg"
+    },
+    {
+        name: "Priyanshu Anand",
+        role: "UI/UX Designer",
+        img: "./assets/team/pa.jpeg"
+    },
+    {
+        name: "Harsh Vardhan",
+        role: "Website Analyst",
+        img: "./assets/team/harsh.jpg"
+    },
+
+    {
+        name: "Md. Aarju Khan",
+        role: "Developer",
+        img: "./assets/team/aarju.jpg"
+    },
+    ]
 
     const Card = (prop) => {
         return (<div>
             <div className="about__team__cards__card">
                 <div className="about__team__cards__card-img">
-                    <img src={teamImg} alt="" />
+                    <img src={prop.img} alt="" />
                 </div>
                 <div className="about__team__cards__card-info">
-                    <p>Bharat Ranjan</p>
-                    <span>Developer</span>
+                    <p>{prop.name}</p>
+                    <span>{prop.role}</span>
                 </div>
             </div>
         </div>)
@@ -37,10 +60,11 @@ const About = () => {
             <div className="about__team">
                 <h2>Behind the Scenes: Get to Know Our Team</h2>
                 <div className="about__team__cards">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {Team.map((t) => {
+                        return (
+                            <Card name={t.name} img={t.img} role={t.role} />
+                        )
+                    })}
                 </div>
             </div>
 

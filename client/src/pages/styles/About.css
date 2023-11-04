@@ -122,7 +122,8 @@
 }
 
 .about__team__cards__card-img {
-  background-color: #eaeaeab3;
+  background-color: #b3d9f698;
+  box-shadow: 0px 1px 3px 1px #00000041;
   border-radius: 50%;
   margin: 5px;
   padding: 5px;
@@ -132,6 +133,11 @@
 .about__team__cards__card-img img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+}
+
+.about__team__cards__card-info {
+  margin: 15px 10 v px;
 }
 
 .about__team__cards__card-info p {
