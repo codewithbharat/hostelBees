@@ -34,8 +34,8 @@ const Home = () => {
                         <h1>India's best Hostel Managment system</h1>
                         <p>"Hosteler" is an all-in-one hostel management solution designed to streamline and simplify the management of hostel facilities within educational institutes.</p>
                         <div className="hero__text__buttons">
-                            <Link className='a'>Know more about us</Link>
-                            <Link className='button'>Get Started</Link>
+                            <Link to="/about" className='a'>Know more about us</Link>
+                            <Link to="/register" className='button'>Get Started</Link>
                         </div>
                     </div>
                 </div>
