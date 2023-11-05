@@ -391,6 +391,8 @@
 
   .hero__text {
     width: 70%;
+    border-radius: 20px;
+    box-shadow: -1px 4px 4px 2px #0000004f;
   }
 
   .hero__text h1 {
@@ -472,8 +474,8 @@
   }
 
   .userExp__heading {
-    margin-top: 50px;
-    font-size: 20px;
+    margin-top: 70px;
+    font-size: 16px;
   }
 
   .reqCall h1 {
