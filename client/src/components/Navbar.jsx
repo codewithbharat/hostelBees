@@ -44,7 +44,7 @@ const Navbar = () => {
                     </span>
                 </div>
 
-                {toggle && <div className="navbar__menu" onClick={() => scrollTop()}>
+                {toggle && <div className="navbar__menu" onClick={() => { scrollTop(); setToggle(!toggle); }}>
                     <NavLink to="/" className="navbar__menu-link">Home</NavLink>
                     <NavLink to="/about" className="navbar__menu-link">About</NavLink>
                     <NavLink to="/contact" className="navbar__menu-link">Contact</NavLink>
