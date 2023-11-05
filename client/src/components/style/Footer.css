@@ -85,9 +85,6 @@
 }
 
 @media (max-width: 480px) {
-  .footer {
-    padding-bottom: 20px;
-  }
   .footer__links {
     flex-direction: column;
     padding: 10%;
