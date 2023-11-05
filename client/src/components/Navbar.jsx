@@ -1,15 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './style/Navbar.css'
 
 import NavLogo from './assets/Nav_Logo.png'
 import { NavLink, Link } from 'react-router-dom'
+import { useMediaQuery } from 'react'
 
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth)
 
+    useEffect(() => {
+        if (width > 480) {
+            setToggle(true);
+        }
+    }, []);
     return (
         <>
             <div className="navbar">
@@ -32,7 +39,6 @@ const Navbar = () => {
                         {toggle && <RxCross1 />}
                     </span>
                 </div>
-
 
                 {toggle && <div className="navbar__menu">
                     <NavLink to="/" className="navbar__menu-link">Home</NavLink>
