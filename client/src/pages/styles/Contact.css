@@ -103,3 +103,47 @@
   font-weight: 500;
   font-size: 25px;
 }
+
+@media (max-width: 480px) {
+  .contact {
+    align-items: center;
+    justify-content: center;
+  }
+  .contact__form {
+    width: 80%;
+  }
+
+  .contact__form h2 {
+    font-size: 30px;
+  }
+
+  .contact__form form {
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px #00000036;
+    padding-left: 5px;
+  }
+
+  .contact__form label {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  .contact__form input {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .contact__form textarea {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+
+  .contact__form input[type="submit"] {
+    font-size: 20px;
+  }
+
+  .contact__img {
+    display: none;
+  }
+}

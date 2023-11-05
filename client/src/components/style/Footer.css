@@ -83,3 +83,32 @@
   line-height: 18.2px; /* 140% */
   margin: 0 20px;
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+  .footer__links {
+    flex-direction: column;
+    padding: 10%;
+  }
+
+  .footer__links-group span {
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  .footer__links-group li {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+
+  .footer__copyright {
+    flex-direction: column;
+  }
+
+  .footer__copyright .a {
+    padding-top: 5px;
+  }
+}

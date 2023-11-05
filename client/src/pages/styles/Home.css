@@ -379,3 +379,128 @@
   letter-spacing: 1.5px;
   padding: 35px 0;
 }
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero_textBox {
+    width: 100%;
+  }
+
+  .hero__text {
+    width: 70%;
+  }
+
+  .hero__text h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .hero__text p {
+    font-size: 11px;
+    padding: 10px 0;
+  }
+
+  .hero__text__buttons .a {
+    font-size: 12px;
+  }
+
+  .hero__text__buttons .button {
+    font-size: 12px;
+    font-weight: 800px;
+  }
+
+  .hero__img {
+    width: 100%;
+  }
+
+  .info {
+    margin-top: 120px;
+    flex-direction: column;
+  }
+  .info__textbox {
+    width: 100%;
+  }
+  .info__textbox__text {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .info__textbox__text span {
+    font-size: 14px;
+  }
+
+  .info__textbox__text h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .info__textbox__text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .info__img {
+    margin-top: -50px;
+    width: 100%;
+  }
+
+  .tut {
+    margin-top: 120px;
+
+    flex-direction: column;
+  }
+
+  .tut__textbox {
+    width: 100%;
+  }
+
+  .tut__textbox__text {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .tut__textbox__text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tut__video {
+    width: 100%;
+  }
+
+  .userExp__heading {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .reqCall h1 {
+    font-size: 25px;
+  }
+
+  .reqCall .input {
+    width: 80%;
+  }
+
+  .reqCall .callback {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .services h2 {
+    font-size: 30px;
+  }
+
+  .services__cards {
+    margin: 0 10px;
+  }
+
+  .serviceCard {
+    margin: 0px;
+    margin-top: 20px;
+    width: 60%;
+  }
+}
