@@ -20,7 +20,7 @@ function App() {
         <Route path='/Register' element={<Register />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
