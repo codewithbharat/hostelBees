@@ -1,12 +1,18 @@
 const mongoose = require('mongoose');
+const bcrypt = require("bcrypt");
 
-const institutes = new mongoose.Schema({
+const instituteSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
     },
 
     email: {
+        type: String,
+        required: true
+    },
+
+    password: {
         type: String,
         required: true
     },
@@ -36,6 +42,20 @@ const institutes = new mongoose.Schema({
 
 });
 
-const Institutes = mongoose.model('Institutes', institutes);
+
+// pre 
+
+instituteSchema.pre('save', function (next) {
+    if (this.password) {
+        const salt = bcrypt.genSaltSync(10);
+        this.password = bcrypt.hashSync(this.password, salt);
+    }
+
+    next();
+})
+
+const Institutes = mongoose.model('Institutes', instituteSchema);
+
+
 
 module.exports = Institutes;
