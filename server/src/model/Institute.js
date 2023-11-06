@@ -17,7 +17,7 @@ const instituteSchema = new mongoose.Schema({
         required: true
     },
 
-    univeristy: {
+    university: {
         type: String,
     },
     category: {
