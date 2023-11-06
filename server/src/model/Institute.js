@@ -17,16 +17,22 @@ const institutes = new mongoose.Schema({
     category: {
         type: String,
         enum: ['tech', 'non-tech'],
-        required: true
+        default: 'tech'
     },
     address: {
         type: String,
-        required: true
     },
 
     web: {
         type: String
-    }
+    },
+
+    hostels: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Hostel', // Referencing the Hostel model
+        },
+    ]
 
 });
 
