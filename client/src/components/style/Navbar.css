@@ -117,6 +117,10 @@
     padding: 10px;
   }
 
+  #nav__web {
+    display: none;
+  }
+
   .navbar__menu-link {
     width: 80%;
     padding: 0;

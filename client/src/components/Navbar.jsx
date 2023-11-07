@@ -9,6 +9,17 @@ import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 const Navbar = () => {
 
+    const NavbarLinks = () => {
+        return (
+            <>
+                <NavLink to="/" className="navbar__menu-link">Home</NavLink>
+                <NavLink to="/about" className="navbar__menu-link">About</NavLink>
+                <NavLink to="/contact" className="navbar__menu-link">Contact</NavLink>
+                <NavLink to="/login" className="navbar__menu-register">Sign In</NavLink>
+            </>
+        )
+    }
+
     const [toggle, setToggle] = useState(false);
     const [width, setWidth] = useState(window.innerWidth)
 
@@ -44,12 +55,12 @@ const Navbar = () => {
                     </span>
                 </div>
 
-                {toggle && <div className="navbar__menu" onClick={() => { scrollTop(); setToggle(!toggle); }}>
-                    <NavLink to="/" className="navbar__menu-link">Home</NavLink>
-                    <NavLink to="/about" className="navbar__menu-link">About</NavLink>
-                    <NavLink to="/contact" className="navbar__menu-link">Contact</NavLink>
-                    <NavLink to="/login" className="navbar__menu-register">Sign In</NavLink>
+                {!toggle && <div id="nav__web" className="navbar__menu" onClick={() => { scrollTop(); setToggle(!toggle); }}>
+                    <NavbarLinks />
+                </div>}
 
+                {toggle && <div className="navbar__menu" onClick={() => { scrollTop(); setToggle(!toggle); }}>
+                    <NavbarLinks />
                 </div>}
             </div >
         </>

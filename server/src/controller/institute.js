@@ -45,10 +45,13 @@ const deleteInst = errorHandler(async (req, res) => {
         return res.status(404).json({ error: 'Institute not found' });
     }
 
-    Inst.deleteMany(inst);
+    await inst.remove();
 
     return res.status(200).json({
-        message: 'ok'
+        message: 'Deleted Sucessfully'
     })
 
 })
+
+
+module.exports = { createInst, updateInst, getAllInst, getInstById, deleteInst }
