@@ -3,19 +3,25 @@ import './style/Navbar.css'
 
 import NavLogo from './assets/Nav_Logo.png'
 import { NavLink, Link } from 'react-router-dom'
-import { useMediaQuery } from 'react'
 
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 const Navbar = () => {
 
     const NavbarLinks = () => {
+        const LinksData = [
+            { to: '/', text: 'Home', class: 'navbar__menu-link' },
+            { to: '/about', text: 'About', class: 'navbar__menu-link' },
+            { to: '/contact', text: 'Contact', class: 'navbar__menu-link' },
+            { to: '/login', text: 'Sign In', class: 'navbar__menu-register' }
+        ]
         return (
             <>
-                <NavLink to="/" className="navbar__menu-link">Home</NavLink>
-                <NavLink to="/about" className="navbar__menu-link">About</NavLink>
-                <NavLink to="/contact" className="navbar__menu-link">Contact</NavLink>
-                <NavLink to="/login" className="navbar__menu-register">Sign In</NavLink>
+                {
+                    LinksData.map((link) => (
+                        <NavLink to={link.to} className={link.class}>{link.text}</NavLink>
+                    ))
+                }
             </>
         )
     }
@@ -46,13 +52,7 @@ const Navbar = () => {
 
 
                 <div className="navbar__hamMenu" onClick={() => setToggle(!toggle)}>
-                    <span>
-                        {!toggle && <RxHamburgerMenu />}
-                    </span>
-
-                    <span>
-                        {toggle && <RxCross1 />}
-                    </span>
+                    {!toggle ? <RxHamburgerMenu /> : <RxCross1 />}
                 </div>
 
                 {!toggle && <div id="nav__web" className="navbar__menu" onClick={() => { scrollTop(); setToggle(!toggle); }}>
