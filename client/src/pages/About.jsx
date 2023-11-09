@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/About.css'
 
 import goal from './assets/about_goal.png'
 
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About Us"
+    }, []);
+
     const Team = [{
         name: "Bharat Ranjan",
         role: "Founder & Developer",
@@ -63,7 +67,7 @@ const About = () => {
                 <div className="about__team__cards">
                     {Team.map((t) => {
                         return (
-                            <Card name={t.name} img={t.img} role={t.role} />
+                            <Card key={t.name} name={t.name} img={t.img} role={t.role} />
                         )
                     })}
                 </div>

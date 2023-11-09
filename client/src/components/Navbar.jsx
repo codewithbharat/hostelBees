@@ -19,7 +19,7 @@ const Navbar = () => {
             <>
                 {
                     LinksData.map((link) => (
-                        <NavLink to={link.to} className={link.class}>{link.text}</NavLink>
+                        <NavLink key={link.text} to={link.to} className={link.class}>{link.text}</NavLink>
                     ))
                 }
             </>

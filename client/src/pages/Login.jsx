@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import './styles/Login.css'
 import { Link } from 'react-router-dom'
@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
 import logo from './assets/logo.png'
 
 const Login = () => {
+    useEffect(() => {
+        document.title = "Login | Institute"
+    }, []);
     return (
         <div className="login">
             <div className="login__form">

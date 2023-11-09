@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Link } from 'react-router-dom'
 import './styles/Register.css'
 import logo from './assets/logo.png'
 
 const Register = () => {
+    useEffect(() => {
+        document.title = "Login | Institute"
+    }, []);
     return (
         <div className="register">
             <div className="register__info">

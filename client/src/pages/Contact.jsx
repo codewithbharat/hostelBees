@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/Contact.css'
 
 import contactImg from './assets/contact_img.png'
 
 const Contact = () => {
+    useEffect(() => {
+        document.title = "Contact Us"
+    }, []);
     return (
         <div className="contact">
             <div className="contact__img">
