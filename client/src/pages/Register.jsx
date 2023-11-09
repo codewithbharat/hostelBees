@@ -6,7 +6,7 @@ import logo from './assets/logo.png'
 
 const Register = () => {
     useEffect(() => {
-        document.title = "Login | Institute"
+        document.title = "register | Institute"
     }, []);
     return (
         <div className="register">
