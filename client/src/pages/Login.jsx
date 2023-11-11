@@ -30,7 +30,7 @@ const Login = () => {
             </div>
             <div className="login__info">
                 <img src={logo} alt="" />
-                <h2>"Welcome back to Hosteler"</h2>
+                <h2>"Welcome back to hostelBees"</h2>
                 <p>Your hub for seamless hostel management. Ready to get started? Please sign in to your account.</p>
             </div>
         </div>

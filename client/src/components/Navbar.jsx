@@ -45,7 +45,7 @@ const Navbar = () => {
                     <div className="navbar__brand">
                         <img src={NavLogo} alt="" className="navbar__brand-logo" />
                         <span className="navbar__brand-name">
-                            Bedster's
+                            hostelBees
                         </span>
                     </div>
                 </Link>

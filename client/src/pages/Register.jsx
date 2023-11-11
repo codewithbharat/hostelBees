@@ -12,7 +12,7 @@ const Register = () => {
         <div className="register">
             <div className="register__info">
                 <img src={logo} alt="" />
-                <h2>"Welcome to Hosteler"</h2>
+                <h2>"Welcome to hostelBees"</h2>
                 <p>“Your journey to hassle-free hostel management starts now.
                     Explore and enjoy the convenience of our platform."</p>
             </div>

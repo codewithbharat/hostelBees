@@ -51,7 +51,7 @@ const About = () => {
                 <div className="about__info__content">
                     <div className="about__info__content__text">
                         <h2>About Us</h2>
-                        <p>"Welcome to Hosteler, your trusted partner in modern hostel management. Our mission is to simplify and enhance the hostel experience for educational institutions and students alike. We provide an innovative platform that streamlines room allocation, fee management, and communication, making hostel life easier and more convenient. Learn more about our journey and how we're shaping the future of hostel management."</p>
+                        <p>"Welcome to hostelBees, your trusted partner in modern hostel management. Our mission is to simplify and enhance the hostel experience for educational institutions and students alike. We provide an innovative platform that streamlines room allocation, fee management, and communication, making hostel life easier and more convenient. Learn more about our journey and how we're shaping the future of hostel management."</p>
                     </div>
 
                     <div className="about__info__content__img">
@@ -81,7 +81,7 @@ const About = () => {
                     </div>
                     <div className="about__goals__content-text">
                         <p>
-                            "At HOSTELERS, our mission is to empower educational institutions, hostel wardens, and students with a modern and intuitive hostel management system. We are committed to streamlining hostel operations, enhancing the hostel experience, and simplifying the day-to-day tasks of administrators and residents. We strive to create a dynamic and supportive platform that brings efficiency and convenience to hostel life, making it an enriching and hassle-free experience for everyone we serve."
+                            "At hostelBeesS, our mission is to empower educational institutions, hostel wardens, and students with a modern and intuitive hostel management system. We are committed to streamlining hostel operations, enhancing the hostel experience, and simplifying the day-to-day tasks of administrators and residents. We strive to create a dynamic and supportive platform that brings efficiency and convenience to hostel life, making it an enriching and hassle-free experience for everyone we serve."
                         </p>
                     </div>
                 </div>

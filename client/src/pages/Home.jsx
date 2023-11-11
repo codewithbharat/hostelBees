@@ -27,7 +27,7 @@ const ServiceCard = (props) => {
 
 const Home = () => {
     useEffect(() => {
-        document.title = "Hosteler | Aruna Technologies"
+        document.title = "hostelBees | Aruna Technologies"
     }, []);
     return (
 
@@ -35,8 +35,8 @@ const Home = () => {
             <div className="hero">
                 <div className="hero_textBox">
                     <div className="hero__text">
-                        <h1>India's best Hostel Managment system</h1>
-                        <p>"Hosteler" is an all-in-one hostel management solution designed to streamline and simplify the management of hostel facilities within educational institutes.</p>
+                        <h1>"Unlock the Hive of Convenience with HostelBees."</h1>
+                        <p>"hostelBees" is an all-in-one hostel management solution designed to streamline and simplify the management of hostel facilities within educational institutes.</p>
                         <div className="hero__text__buttons">
                             <Link to="/about" className='a'>Know more about us</Link>
                             <Link to="/register" className='button'>Get Started</Link>
@@ -53,7 +53,7 @@ const Home = () => {
                     <div className="info__textbox__text">
                         <span>hostel managment system</span>
                         <h2>"Seamless Hostel Managment, Elevated Online"</h2>
-                        <p>"Hosteler" is an all-in-one hostel management solution designed to streamline and simplify the management of hostel facilities within educational institutes. With a custom page dedicated to each institute, Hosteler empowers institutions to effortlessly oversee and optimize hostel operations, catering to the specific needs of students and staff alike.</p>
+                        <p>"hostelBees" is an all-in-one hostel management solution designed to streamline and simplify the management of hostel facilities within educational institutes. With a custom page dedicated to each institute, hostelBees empowers institutions to effortlessly oversee and optimize hostel operations, catering to the specific needs of students and staff alike.</p>
                     </div>
                 </div>
                 <div className="info__img">
@@ -64,7 +64,7 @@ const Home = () => {
                 <div className="tut__textbox">
                     <div className="tut__textbox__text">
                         <p>
-                            Our 'One Solution for Everyone' philosophy means that whether you're an institute administrator looking to simplify administrative tasks, a student eager to make hostel life a breeze, a warden responsible for student well-being, or a support staff member striving for operational excellence, Hosteler is here to streamline and elevate your experience. We believe in providing a unified, user-friendly platform that brings everyone together to create a well-managed, comfortable, and secure hostel environment.
+                            Our 'One Solution for Everyone' philosophy means that whether you're an institute administrator looking to simplify administrative tasks, a student eager to make hostel life a breeze, a warden responsible for student well-being, or a support staff member striving for operational excellence, hostelBees is here to streamline and elevate your experience. We believe in providing a unified, user-friendly platform that brings everyone together to create a well-managed, comfortable, and secure hostel environment.
                         </p>
                     </div>
                 </div>
@@ -79,16 +79,16 @@ const Home = () => {
                 <div className="userExp__cards">
                     <RatingCard
                         name="Bharat Ranjan"
-                        des="'Incorporating Hosteler into our hostel management system has been a game-changer for our institution. This platform offers a tailored solution that simplifies room allocation, fee management, and staff oversight. The custom institute page streamlines all administrative tasks, making hostel management efficient and hassle-free. Hosteler has truly elevated our operations.'"
+                        des="'Incorporating hostelBees into our hostel management system has been a game-changer for our institution. This platform offers a tailored solution that simplifies room allocation, fee management, and staff oversight. The custom institute page streamlines all administrative tasks, making hostel management efficient and hassle-free. hostelBees has truly elevated our operations.'"
                         inst="SPNREC, Araria" />
                     <RatingCard
                         name="Md. Aarju Khan"
-                        des="'Hosteler has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend Hosteler to other educational institutes seeking a comprehensive and user-friendly solution.'"
+                        des="'hostelBees has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend hostelBees to other educational institutes seeking a comprehensive and user-friendly solution.'"
                         inst="spnrec , araria"
                     />
                     <RatingCard
                         name="Priyanshu Anand"
-                        des="'Hosteler has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend Hosteler to other educational institutes seeking a comprehensive and user-friendly solution.'"
+                        des="'hostelBees has revolutionized our approach to hostel management. With its dedicated institute page, we have complete control over every aspect of our hostel facilities. The system is intuitive, and the communication hub enhances interaction between our staff, students, and administrators. We highly recommend hostelBees to other educational institutes seeking a comprehensive and user-friendly solution.'"
                         inst="spnrec , araria"
                     />
                 </div>
