@@ -27,7 +27,7 @@ const ServiceCard = (props) => {
 
 const Home = () => {
     useEffect(() => {
-        document.title = "hostelBees | Aruna Technologies"
+        document.title = "hostelBees | ArunaByte Innovations"
     }, []);
     return (
 
