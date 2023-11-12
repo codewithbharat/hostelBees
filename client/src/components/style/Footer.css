@@ -2,6 +2,8 @@
   background-color: #151b26;
   width: 100%;
   position: relative;
+  margin-bottom: -20px;
+
   z-index: 3;
 }
 
