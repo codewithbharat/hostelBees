@@ -42,7 +42,3 @@ The server will be accessible at [http://localhost:YOUR_PORT(http://localhost:YO
 - [React](https://reactjs.org/) - Frontend library
 - [Express.js](https://expressjs.com/) - Backend framework
 - [Mongoose](https://mongoosejs.com/) - MongoDB object modeling for Node.js
-
----
-
-Feel free to customize this template based on your specific project details, add sections such as "Features," "Deployment," or "Troubleshooting," and include any additional information that might be relevant for contributors or users.
