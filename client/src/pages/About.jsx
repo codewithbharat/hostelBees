@@ -50,12 +50,17 @@ const About = () => {
             <div className="about__info">
                 <div className="about__info__content">
                     <div className="about__info__content__text">
-                        <h2>About Us</h2>
-                        <p>"Welcome to hostelBees, your trusted partner in modern hostel management. Our mission is to simplify and enhance the hostel experience for educational institutions and students alike. We provide an innovative platform that streamlines room allocation, fee management, and communication, making hostel life easier and more convenient. Learn more about our journey and how we're shaping the future of hostel management."</p>
+                        <h2>About ArunaByte Innovations</h2>
+                        <p>
+                            Welcome to ArunaByte Innovations, the driving force behind HostelBees, a new hostel management solution. We at ArunaByte believe in pushing the boundaries of innovation in order to improve experiences, streamline processes, and connect communities.
+                        </p>
+
+                        <p>
+                            Our flagship product, HostelBees, exemplifies our dedication to innovation. HostelBees is a complete platform meant to automate activities, improve security, and offer a centralised centre for smooth communication.
+                        </p>
                     </div>
 
                     <div className="about__info__content__img">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem nihil corrupti cum ipsum ipsa sequi ratione consequuntur, ea ullam tempore facilis eius vitae molestiae in itaque voluptates iusto dignissimos assumenda suscipit earum ex? Illo, cum fugit reprehenderit nobis eligendi ipsum aliquam saepe amet perspiciatis ab non fugiat. Corporis, optio? Architecto porro accusamus ducimus. Non expedita illum corporis, nostrum minima ab doloremque molestiae? Sit, nemo? Nihil optio commodi libero porro? Quia, velit ea. Totam, natus dolores! Delectus natus nihil eaque quas reprehenderit, ipsa ad necessitatibus quasi iusto laudantium similique consequatur culpa aliquam rem incidunt unde. Blanditiis ad assumenda hic animi.</p>
                     </div>
                 </div>
                 <svg viewBox="0 0 1440 320">
@@ -81,7 +86,8 @@ const About = () => {
                     </div>
                     <div className="about__goals__content-text">
                         <p>
-                            "At hostelBeesS, our mission is to empower educational institutions, hostel wardens, and students with a modern and intuitive hostel management system. We are committed to streamlining hostel operations, enhancing the hostel experience, and simplifying the day-to-day tasks of administrators and residents. We strive to create a dynamic and supportive platform that brings efficiency and convenience to hostel life, making it an enriching and hassle-free experience for everyone we serve."
+                            "ArunaByte Innovations is driven by a desire to rethink dormitory life. Our objective is to provide cutting-edge solutions to institutes, wardens, and students that expedite duties, increase collaboration, and improve the entire hostel experience.
+                            A fast-growing technology firm committed to creating innovative solutions. With a love for issue solving, our expert team uses technology to build products that have a genuine impact."
                         </p>
                     </div>
                 </div>
