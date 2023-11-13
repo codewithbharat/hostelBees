@@ -35,7 +35,6 @@
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .contact_form__labelGroup {
@@ -47,7 +46,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  text-transform: uppercase;
   color: #000;
   font-family: Arial;
   font-size: 18px;
@@ -55,15 +53,14 @@
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 1px;
-  text-transform: uppercase;
   margin: 0 15px;
+  text-transform: uppercase;
 }
 
 .contact__form input {
   padding: 13px;
   width: 95%;
   margin-top: 15px;
-
   border-radius: 10px;
   border: 0.15px solid #22397a96;
   background: rgba(208, 223, 240, 0.75);
@@ -74,7 +71,6 @@
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .contact__form textarea {
@@ -91,7 +87,6 @@
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .contact__form input[type="submit"] {
