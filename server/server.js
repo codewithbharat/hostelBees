@@ -2,10 +2,6 @@
 const express = require('express');
 const app = express();
 
-//importing CORS
-var cors = require('cors');
-app.use(cors());
-
 // Configuring Enviroment variables
 require('dotenv').config();
 
@@ -25,10 +21,9 @@ app.use(express.json());
 
 //Import all Routes
 const institute = require('./src/route/Institute');
-const contact = require('./src/route/ContactForm')
+
 
 app.use('/api/v1', institute);
-app.use('/api/v1/', contact);
 
 // Welcome Route
 app.get('/', (req, res) => {
@@ -37,5 +32,5 @@ app.get('/', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(process.env.PORT || `Server is running on port ${port}\nVisit : http://localhost:${port}/`);
+    console.log(`Server is running on port ${port}\nVisit : http://localhost:${port}/`);
 });
