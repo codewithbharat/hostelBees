@@ -1,11 +1,13 @@
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const Institute = require('../../src/model/Institute'); // Import your Institute model
 const Hostel = require('../../src/model/Hostel'); // Import your Hostel model
 
-require('dotenv').config();
 
-const mongoURI = process.env.MONGO_URL;
+
+const mongoURI = process.env.MONGO_URI;
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
