@@ -25,7 +25,7 @@ const contactMe = errorHandler(async (req, res) => {
     });
 
     res.status(201).json({
-        message: "Thankyou!! We revcived your message... we will reach you soon."
+        message: "Thank you for reaching out! Your Message has been Recived we will Get Back to you soon"
     })
 });
 

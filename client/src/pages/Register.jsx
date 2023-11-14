@@ -1,13 +1,56 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Link } from 'react-router-dom'
 import './styles/Register.css'
 import logo from './assets/logo.png'
 
+import axios from 'axios';
+
 const Register = () => {
     useEffect(() => {
-        document.title = "Register | Institute"
+        document.title = "Get Started"
     }, []);
+
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        password: "",
+        userType: "",
+    });
+
+    const handelInput = (e) => {
+        setData({ ...data, [e.target.name]: e.target.value })
+    }
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [userType, setUserType] = useState("inst");
+
+    const handelSubmit = (e) => {
+        if (isSubmitting) {
+            document.getElementById("form").reset();
+            alert("Please wait..");
+
+        }
+
+        setIsSubmitting(true);
+        e.preventDefault();
+        axios.post(`${import.meta.env.VITE_SERVER}/${userType}`, data, {
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+            .then(Response => {
+                console.log(Response);
+                alert(Response.data.message);
+                document.getElementById("form").reset();
+
+            })
+            .catch(err => console.log(err))
+            .finally(() => {
+                setIsSubmitting(false);
+            });
+    }
+
     return (
         <div className="register">
             <div className="register__info">
@@ -17,25 +60,25 @@ const Register = () => {
                     Explore and enjoy the convenience of our platform."</p>
             </div>
             <div className="register__form">
-                <form action="">
+                <form id='form' onSubmit={handelSubmit}>
                     <h2>Get Registered</h2>
 
-                    <label>Institute Name
-                        <input type="text" name="" id="" placeholder='Your Institute' required />
+                    <label>Name
+                        <input type="text" onChange={handelInput} name="name" placeholder='Your Institute' required />
                     </label>
 
-                    <label>email/phone no.
-                        <input type="text" name="" id="" placeholder='email/phone no.' required />
+                    <label>email
+                        <input type="email" onChange={handelInput} name="email" placeholder='email/phone no.' required />
                     </label>
 
                     <label>
                         password
-                        <input type="password" placeholder='your password' required />
+                        <input type="password" onChange={handelInput} name="password" placeholder='your password' required />
                     </label>
 
                     <label>
                         Register As
-                        <select id="cars" name="cars">
+                        <select value={userType} onChange={(e) => setUserType(e.target.value)}>
                             <option value="inst">Institute</option>
                             <option value="warden">Warden</option>
                             <option value="student">Student</option>

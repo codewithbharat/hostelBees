@@ -6,7 +6,10 @@ const Inst = require("../model/Institute");
 const createInst = errorHandler(async (req, res) => {
     const inst = new Inst(req.body);
     const newInst = await inst.save();
-    res.status(201).json(newInst);
+    res.status(201).json({
+        message: "Institute Registerd Sucessfully!!!",
+        info: newInst
+    });
 });
 
 // Get all insitutes
