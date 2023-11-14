@@ -30,7 +30,7 @@ const Contact = () => {
 
         setIsSubmitting(true);
         e.preventDefault();
-        axios.post(`https://misty-shorts-slug.cyclic.app/contact`, data)
+        axios.post(`${import.meta.env.VITE_SERVER}/contact`, data)
             .then(Response => {
                 console.log(Response);
                 alert(Response.data.message);
