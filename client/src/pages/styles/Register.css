@@ -50,7 +50,8 @@
   text-transform: uppercase;
 }
 
-.register__form input {
+.register__form input,
+select {
   padding: 13px;
   width: 95%;
   margin-top: 15px;

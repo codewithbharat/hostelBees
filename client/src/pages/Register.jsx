@@ -18,7 +18,7 @@ const Register = () => {
             </div>
             <div className="register__form">
                 <form action="">
-                    <h2>Register Institute</h2>
+                    <h2>Get Registered</h2>
 
                     <label>Institute Name
                         <input type="text" name="" id="" placeholder='Your Institute' required />
@@ -34,8 +34,12 @@ const Register = () => {
                     </label>
 
                     <label>
-                        Confirm password
-                        <input type="password" placeholder='Confirm password' required />
+                        Register As
+                        <select id="cars" name="cars">
+                            <option value="inst">Institute</option>
+                            <option value="warden">Warden</option>
+                            <option value="student">Student</option>
+                        </select>
                     </label>
                     <div className="register__form__buttons">
                         <input type="submit" value="register" />
