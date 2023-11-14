@@ -7,7 +7,7 @@ const createInst = errorHandler(async (req, res) => {
     const inst = new Inst(req.body);
     const newInst = await inst.save();
     res.status(201).json({
-        message: "Institute Registerd Sucessfully!!!",
+        message: "Institute Registerd Successfully!!!",
         info: newInst
     });
 });

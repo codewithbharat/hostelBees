@@ -32,10 +32,12 @@ app.all('/*', function (req, res, next) {
 
 //Import all Routes
 const institute = require('./src/route/Institute');
-const contact = require('./src/route/ContactForm')
+const warden = require('./src/route/Warden');
+const contact = require('./src/route/ContactForm');
 
 app.use('/api/v1', institute);
 app.use('/api/v1/', contact);
+app.use('/api/v1', warden);
 
 // Welcome Route
 app.get('/', (req, res) => {
