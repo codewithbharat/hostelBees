@@ -36,6 +36,6 @@ app.get('/', (req, res) => {
 })
 
 // Start the server
-app.listen(port, () => {
-    console.log(process.env.PORT || `Server is running on port ${port}\nVisit : http://localhost:${port}/`);
+app.listen(process.env.PORT || port, () => {
+    console.log(`Server is running on port ${port}\nVisit : http://localhost:${port}/`);
 });
