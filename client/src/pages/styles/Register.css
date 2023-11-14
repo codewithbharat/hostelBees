@@ -66,7 +66,11 @@ select {
   font-weight: 400;
   line-height: 16px; /* 100% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: none;
+}
+
+.register__form select {
+  width: 100%;
 }
 .register__form__buttons {
   display: flex;

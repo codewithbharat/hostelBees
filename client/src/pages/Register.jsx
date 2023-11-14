@@ -64,16 +64,16 @@ const Register = () => {
                     <h2>Get Registered</h2>
 
                     <label>Name
-                        <input type="text" onChange={handelInput} name="name" placeholder='Your Institute' required />
+                        <input type="text" onChange={handelInput} name="name" placeholder='Name' required />
                     </label>
 
                     <label>email
-                        <input type="email" onChange={handelInput} name="email" placeholder='email/phone no.' required />
+                        <input type="email" onChange={handelInput} name="email" placeholder='Email Address' required />
                     </label>
 
                     <label>
                         password
-                        <input type="password" onChange={handelInput} name="password" placeholder='your password' required />
+                        <input type="password" onChange={handelInput} name="password" placeholder='Strong Password' required />
                     </label>
 
                     <label>
