@@ -99,6 +99,12 @@
   font-size: 25px;
 }
 
+.contact__form input[type="submit"]:hover {
+  color: #6fb14a;
+  background-color: #fff;
+  border: 2px solid #6fb14a;
+}
+
 @media (max-width: 480px) {
   .contact {
     align-items: center;
