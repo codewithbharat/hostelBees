@@ -39,8 +39,10 @@ app.use('/api/v1/', contact);
 
 // Welcome Route
 app.get('/', (req, res) => {
-    res.render('home');
-})
+    res.send({
+        message: "server is up and running"
+    });
+});
 
 // Start the server
 app.listen(process.env.PORT || port, () => {
