@@ -3,7 +3,6 @@ import './styles/Contact.css'
 import axios from 'axios'
 
 import contactImg from './assets/contact_img.png'
-import { addListener } from '../../../server/src/model/Institute'
 
 const Contact = () => {
     const [data, setData] = useState({
