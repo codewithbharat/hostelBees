@@ -30,7 +30,11 @@ const Contact = () => {
 
         setIsSubmitting(true);
         e.preventDefault();
-        axios.post(`${import.meta.env.VITE_SERVER}/contact`, data)
+        axios.post(`${import.meta.env.VITE_SERVER}/contact`, data, {
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
             .then(Response => {
                 console.log(Response);
                 alert(Response.data.message);
