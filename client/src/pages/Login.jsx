@@ -13,7 +13,7 @@ const Login = () => {
         <div className="login">
             <div className="login__form">
                 <form action="">
-                    <h2>Institute Login</h2>
+                    {/* <h2>Institute Login</h2>
                     <label>email/phone no.
                         <input type="text" name="" id="" placeholder='email/phone no.' required />
                     </label>
@@ -24,6 +24,10 @@ const Login = () => {
                     </label>
                     <div className="login__form__buttons">
                         <input type="submit" value="login" />
+                        <Link className='a' to="/register">join now</Link>
+                    </div> */}
+                    <h2>Login : Not Available</h2>
+                    <div className="login__form__buttons">
                         <Link className='a' to="/register">join now</Link>
                     </div>
                 </form>

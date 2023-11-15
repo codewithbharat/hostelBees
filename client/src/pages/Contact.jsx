@@ -15,7 +15,6 @@ const Contact = () => {
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isDisabled, setIsDisabled] = useState(false);
 
     const handelInput = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
