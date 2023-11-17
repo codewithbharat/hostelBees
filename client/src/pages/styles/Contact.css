@@ -73,6 +73,18 @@
   letter-spacing: 1px;
 }
 
+/* Chrome, Safari, Edge, Opera */
+.contact__form input::-webkit-outer-spin-button,
+.contact__form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.contact__form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .contact__form textarea {
   width: 95%;
   margin-top: 15px;
