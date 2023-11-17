@@ -19,6 +19,17 @@
 .footer__links-group {
   background-color: inherit;
 }
+.footer__links-group p{
+  color: #fff;
+  font-family:Lato;
+  margin-top: 2.5%;
+}
+
+.footer__links-group__social li {
+  display: inline-block;
+  margin-right: 8%;
+
+}
 
 .footer__links-group span {
   background-color: inherit;
@@ -28,12 +39,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 109.091% */
-  
+
 }
 
 .footer__links-group li {
   list-style: none;
   background-color: inherit;
+  margin-top: 10%;
 }
 
 .footer__links-group li .a {
@@ -42,7 +54,7 @@
 
   color: #fde8e8ab;
   font-family: Lato;
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 12.8px; /* 144% */
