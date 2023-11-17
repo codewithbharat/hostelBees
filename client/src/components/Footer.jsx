@@ -1,9 +1,9 @@
 import React from 'react'
 import './style/Footer.css'
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
+// import { FaInstagramSquare } from "react-icons/fa";
+// import { FaTwitterSquare } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaMapLocationDot } from "react-icons/fa6";
