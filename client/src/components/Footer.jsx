@@ -1,9 +1,6 @@
 import React from 'react'
 import './style/Footer.css'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
-// import { FaInstagramSquare } from "react-icons/fa";
-// import { FaTwitterSquare } from "react-icons/fa";
-// import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -20,7 +17,7 @@ const Footer = () => {
                             HOSTELBEES
                         </span>
                         <p>We are specialized in designings & make your HMS as a professional,</p>
-                        <p>Try our premium services.</p>
+                        <p>Try our premium services now.</p>
                             <div className='footer__links-group__social'>
                         <li><Link className='a'><FaLinkedin size={30} color='white'/></Link></li>
                         <li><Link className='a'><FaTwitterSquare size={30} color='white'/></Link></li>
