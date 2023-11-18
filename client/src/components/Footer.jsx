@@ -40,24 +40,24 @@ const Footer = () => {
                         <span>
                             Quick Links
                         </span>
-                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>ﾠﾠHome</Link></li>
-                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>ﾠﾠServices</Link></li>
-                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>ﾠﾠWhy HMS</Link></li>
-                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>ﾠﾠHostels</Link></li>
-                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>ﾠﾠDocumentation</Link></li>
-                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>ﾠﾠReviews</Link></li>
+                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>&nbsp;Home</Link></li>
+                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>&nbsp;Services</Link></li>
+                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>&nbsp;Why HMS</Link></li>
+                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>&nbsp;Hostels</Link></li>
+                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>&nbsp;Documentation</Link></li>
+                        <li><Link className='a'><HiArrowSmRight size={20} color='white'/>&nbsp;Reviews</Link></li>
                     </div>
 
                     <div className="footer__links-group">
                         <span>
                             Contact
                         </span>
-                        <li><Link className='a'>ﾠﾠﾠﾠ</Link></li>
-                        <li><Link className='a'><IoIosMail size={20} color='white'/>ﾠﾠaarju123@gmail.com</Link></li>
-                        <li><Link className='a'><LuPhoneCall size={20} color='white'/>ﾠﾠ+91 0000000000</Link></li>
-                        <li><Link className='a'>ﾠﾠﾠﾠ</Link></li>
-                        <li><Link className='a'><FaMapLocationDot size={20} color='white'/>ﾠﾠSPNREC,Araria,Bihar</Link></li>
-                        <li><Link className='a'>ﾠﾠﾠﾠIndia,854318</Link></li>
+                        <li><Link className='a'>&nbsp;</Link></li>
+                        <li><Link className='a'><IoIosMail size={20} color='white'/>&nbsp;&nbsp;aarju123@gmail.com</Link></li>
+                        <li><Link className='a'><LuPhoneCall size={20} color='white'/>&nbsp;&nbsp;+91 0000000000</Link></li>
+                        <li><Link className='a'>&nbsp;</Link></li>
+                        <li><Link className='a'><FaMapLocationDot size={20} color='white'/>&nbsp;&nbsp;SPNREC,Araria,Bihar</Link></li>
+                        <li><Link className='a'>&nbsp;&nbsp;&nbsp;&nbsp;India,854318</Link></li>
                     </div>
                 </div>
                 <div className="footer__margin"></div>
