@@ -43,9 +43,7 @@ app.use('/api/v1', student);
 
 // Welcome Route
 app.get('/', (req, res) => {
-    res.send({
-        message: "server is up and running"
-    });
+    res.render('Home');
 });
 
 // Start the server
