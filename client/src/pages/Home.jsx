@@ -4,25 +4,30 @@ import { Link } from 'react-router-dom'
 
 import hero from './assets/home_hero.png'
 import info from './assets/home_info.png'
-import tut from './assets/home_tut.jpg'
+import tut from './assets/home_tut.png'
+import rating from './assets/starrating.png'
 
 
 const UserExperiences = [
     {
         name: "Emma Thompson",
-        description: "HostelBees transformed our hostel experience! The automated tasks saved time, and the secure database gave us peace of mind. Seamless communication made hostel life a breeze."
+        description: "HostelBees transformed our hostel experience! The automated tasks saved time, and the secure database gave us peace of mind. Seamless communication made hostel life a breeze.",
+        image: rating,
     },
     {
         name: "Alex Rodriguez",
-        description: "Using HostelBees was a game-changer. The user-friendly interfaces made navigation a breeze, and the swift onboarding process got us up and running in no time. Highly recommended!"
+        description: "Using HostelBees was a game-changer. The user-friendly interfaces made navigation a breeze, and the swift onboarding process got us up and running in no time. Highly recommended!",
+        image: rating,
     },
     {
         name: "Jasmine Chen",
-        description: "HostelBees created a sense of community. The seamless communication hub brought us together, and the digital transformation made hostel living more enjoyable. Loving the innovation!"
+        description: "HostelBees created a sense of community. The seamless communication hub brought us together, and the digital transformation made hostel living more enjoyable. Loving the innovation!",
+        image: rating,
     },
     {
         name: "Ryan Johnson",
-        description: "As a hostel administrator, HostelBees made my job easier. The automated task management and secure cloud infrastructure streamlined operations. A must-have for efficient hostel management."
+        description: "As a hostel administrator, HostelBees made my job easier. The automated task management and secure cloud infrastructure streamlined operations. A must-have for efficient hostel management.",
+        image: rating,
     }
 ];
 
@@ -31,6 +36,7 @@ const RatingCard = (props) => {
     return (
         <div className="ratingCard">
             <h3>{props.name}</h3>
+            <img src={props.image} alt={`${props.name}'s experience`} />
             <p>"{props.des}"</p>
         </div>
     )
@@ -110,8 +116,11 @@ const Home = () => {
             <div className="tut">
                 <div className="tut__textbox">
                     <div className="tut__textbox__text">
+                        <h3>
+                            "Streamlined Hostel Management through User-Friendly Interfaces"
+                        </h3>
                         <p>
-                            "HostelBees prioritises user experience by providing managers and students with simple interfaces that allow for easy navigation. Our quick onboarding procedure makes the switch to HostelBees simple, ushering users into the future of efficient hostel management."
+                            HostelBees prioritises user experience by providing managers and students with simple interfaces that allow for easy navigation. Our quick onboarding procedure makes the switch to HostelBees simple, ushering users into the future of efficient hostel management.
                         </p>
                     </div>
                 </div>
@@ -130,16 +139,6 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="reqCall">
-                <h1>Request Call Back</h1>
-                <form>
-                    <input className="input" placeholder='YOUR NAME' type="text" name="name" />
-                    <input className="input" placeholder='YOUR EMAIL' type="text" name="name" />
-                    <input className="input" placeholder='YOUR PHONE NO.' type="text" name="name" />
-                    <input className="callback" type="submit" value="CALL BACK" />
-                </form>
-            </div>
-
             <div className="userExp">
                 <div className="userExp__heading">
                     <h2>Our User's Experiences</h2>
@@ -147,7 +146,7 @@ const Home = () => {
                 <div className="userExp__cards">
                     {
                         UserExperiences.map((user) => (
-                            <RatingCard name={user.name} des={user.description} />
+                            <RatingCard name={user.name} des={user.description} image={user.image} />
                         ))
                     }
                 </div>

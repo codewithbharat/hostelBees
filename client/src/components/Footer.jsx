@@ -52,10 +52,8 @@ const Footer = () => {
                         <span>
                             Contact
                         </span>
-                        <li><Link className='a'>&nbsp;</Link></li>
-                        <li><Link className='a'><IoIosMail size={20} color='white'/>&nbsp;&nbsp;aarju123@gmail.com</Link></li>
+                        <li><Link className='a'><IoIosMail size={20} color='white'/>&nbsp;&nbsp;arunabytes.innovations@gmail.com</Link></li>
                         <li><Link className='a'><LuPhoneCall size={20} color='white'/>&nbsp;&nbsp;+91 0000000000</Link></li>
-                        <li><Link className='a'>&nbsp;</Link></li>
                         <li><Link className='a'><FaMapLocationDot size={20} color='white'/>&nbsp;&nbsp;SPNREC,Araria,Bihar</Link></li>
                         <li><Link className='a'>&nbsp;&nbsp;&nbsp;&nbsp;India,854318</Link></li>
                     </div>

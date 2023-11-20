@@ -183,14 +183,22 @@
   border-radius: 25px;
 }
 
-.tut__textbox__text p {
+.tut__textbox__text h3 {
   color: #000;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 24px;
+  font-family: Lato;
+  font-size: 34px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 28.5px; /* 183.333% */
+  font-weight: 900;
+  line-height: 38px; /* 132.5% */
+}
+.tut__textbox__text p {
+  color: #2a3037;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 10px;
+  line-height: 25px; /* 150% */
 }
 
 .tut__video {
@@ -211,6 +219,7 @@
 
 .userExp {
   background-color: inherit;
+  padding-top: 20px;
 }
 
 .userExp__heading {
@@ -242,10 +251,16 @@
   height: 250px;
   margin: 30px;
   padding: 30px;
+  background-color: #334875;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ratingCard h3 {
-  color: #000;
+  color: #ffffff;
   text-align: center;
   font-family: Lato;
   font-size: 20px;
@@ -257,7 +272,7 @@
 
 .ratingCard p {
   padding: 30px 0;
-  color: #000;
+  color: #ffffff;
   text-align: center;
   font-family: Lato;
   font-size: 12px;
@@ -265,6 +280,14 @@
   font-weight: 300;
   line-height: 20px; /* 100% */
   letter-spacing: 1.5px;
+}
+
+
+.ratingCard img {
+  width: 160px;
+  height: 50px; 
+  object-fit: cover; /* This property is optional and determines how the image is resized to fit its container */
+  padding-top: 10px;
 }
 
 .ratingCard span {
@@ -279,56 +302,11 @@
   text-transform: uppercase;
 }
 
-.reqCall {
-  background-color: #334875;
-  margin: 2% 5%;
-  padding: 20px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.reqCall h1 {
-  color: #fff;
-  font-family: Lato;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23px; /* 57.5% */
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.reqCall .input {
-  border-radius: 15px;
-  background: #ebebeb;
-  padding: 15px;
-  margin: 0 10px;
-  margin-top: 25px;
-  border: none;
-}
-
-.reqCall .callback {
-  border-radius: 18px;
-  background: #77c043;
-  padding: 15px 25px;
-
-  color: #fff;
-  font-family: Open Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px; /* 64% */
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
-
 .services {
   background-color: inherit;
   text-align: center;
   padding: 30px 0;
+  background-color: #e0e5ee;
 }
 
 .services h2 {
@@ -352,6 +330,7 @@
 .serviceCard {
   box-shadow: -1px 0px 3px 0px rgb(0 0 0 / 40%);
   border-radius: 10px;
+  background-color: #fff;
   width: 170px;
   height: 170px;
   margin: 30px;
