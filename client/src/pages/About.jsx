@@ -17,7 +17,7 @@ const About = () => {
     {
         name: "Priyanshu Anand",
         role: "UI/UX Designer",
-        img: "./assets/team/pa.jpeg"
+        img: "./assets/team/priyanshu.jpeg"
     },
     {
         name: "Harsh Vardhan",

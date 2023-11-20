@@ -30,11 +30,6 @@ const Login = () => {
                         <input type="submit" value="login" />
                         <Link className='a' to="/register">join now</Link>
                     </div>
-
-                    {/* <h2>Login : Not Available</h2>
-                    <div className="login__form__buttons">
-                        <Link className='a' to="/register">join now</Link>
-                    </div> */}
                 </form>
             </div>
             <div className="login__info">
