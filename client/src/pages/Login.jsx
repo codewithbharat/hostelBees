@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 import logo from './assets/logo.png'
 import { MdAccountCircle } from "react-icons/md";
-import { FaPersonShelter, FaBuildingFlag } from "react-icons/fa6";
-import { FaLock, FaRegEyeSlash } from "react-icons/fa";
+import { FaPersonShelter } from "react-icons/fa6";
+import { FaLock, FaRegEyeSlash, FaEye } from "react-icons/fa";
 
 // const [userType, setUserType] = useState("inst");
 const Login = () => {
@@ -28,12 +28,12 @@ const Login = () => {
 
                     <label><span><i><FaLock size={15} /></i>  Password </span>
                         <input type={showPassword} placeholder='Password' required />
-                        <a href="#" className='unhide_pass'><FaRegEyeSlash onClick={() => showPassword === "password" ? setUsePassword("text") : setUsePassword("password")} /></a>
+                        <a href="#" onClick={() => showPassword === "password" ? setUsePassword("text") : setUsePassword("password")} id='unhide_pass'>{showPassword === "password" ? <FaRegEyeSlash /> : <FaEye />}</a>
                     </label>
                     <div className='login__form_select'>
                         <label><span><i><FaPersonShelter /></i>  Login as : </span>
-                            <select name="Register As" id="login_form_select" required>
-                                <option selected>Please Select User Role</option>
+                            <select name="Login As" id="login_form_select" required>
+                                <option selected>User Role</option>
                                 <option value="inst">Institute</option>
                                 <option value="warden">Warden</option>
                                 <option value="student">Student</option>

@@ -284,7 +284,7 @@
 
 .ratingCard img {
   width: 160px;
-  height: 50px; 
+  height: 50px;
   object-fit: cover; /* This property is optional and determines how the image is resized to fit its container */
   padding-top: 10px;
 }
@@ -469,6 +469,10 @@
     width: 50%;
     margin-left: 10px;
     margin-top: 20px;
+  }
+
+  .services {
+    margin-top: 140px;
   }
 
   .services h2 {
