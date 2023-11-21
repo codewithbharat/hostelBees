@@ -25,17 +25,7 @@ const Footer = () => {
                         <li><Link className='a'><FaInstagramSquare size={30} color='white'/></Link></li>
                             </div>
                     </div>
-                    {/* <div className="footer__links-group">
-                        <span>
-                            Company
-                        </span>
-                        <li><Link className='a'>About</Link></li>
-                        <li><Link className='a'>News Letter</Link></li>
-                        <li><Link className='a'>Tutorials</Link></li>
-                        <li><Link className='a'>Support</Link></li>
-                        <li><Link className='a'>Career</Link></li>
-                        <li><Link className='a'>Help Center</Link></li>
-                    </div> */}
+                    
                     <div className="footer__links-group">
                         <span>
                             Quick Links
@@ -52,7 +42,7 @@ const Footer = () => {
                         <span>
                             Contact
                         </span>
-                        <li><Link className='a'><IoIosMail size={20} color='white'/>&nbsp;&nbsp;arunabytes.innovations@gmail.com</Link></li>
+                        <li><Link className='a'><IoIosMail size={20} color='white'/>&nbsp;&nbsp;Email: arunabytes.innovations@gmail.com</Link></li>
                         <li><Link className='a'><LuPhoneCall size={20} color='white'/>&nbsp;&nbsp;+91 0000000000</Link></li>
                         <li><Link className='a'><FaMapLocationDot size={20} color='white'/>&nbsp;&nbsp;SPNREC,Araria,Bihar</Link></li>
                         <li><Link className='a'>&nbsp;&nbsp;&nbsp;&nbsp;India,854318</Link></li>

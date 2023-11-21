@@ -25,7 +25,8 @@
   font-weight: 700;
   line-height: 26px; /* 57.143% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  text-align: center;
 }
 
 .login__form form {
@@ -38,16 +39,21 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   color: #000;
   font-family: Arial;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 88.889% */
+  line-height: 10px; /* 88.889% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+}
+
+.login__form label span i {
+  position: relative;
+  top: 2px;
 }
 
 .login__form input {
@@ -65,7 +71,11 @@
   font-weight: 400;
   line-height: 16px; /* 100% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+}
+
+.login__form a {
+  text-decoration: none;
+  color: #007bff;
 }
 
 .login__info {
@@ -74,14 +84,14 @@
   height: 100%;
 }
 
-.login__form__buttons {
+/* .login__form__buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .login__form__buttons input[type="submit"] {
-  width: 45%;
+  width: 40%;
 
   border-radius: 10px;
   background: #e0e5ee;
@@ -93,10 +103,18 @@
   font-weight: 400;
   line-height: 16px; /* 88.889% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+
+  position: relative;
+  top: 3px;
+  left: 29%;
 }
 
-.login__form__buttons .a {
+.login__form_select {
+  position: relative;
+  top: -20px;
+}
+
+/* .login__form__buttons .a {
   width: 40%;
   text-decoration: none;
   border-radius: 10px;
@@ -113,6 +131,32 @@
   font-weight: 400;
 
   text-transform: uppercase;
+} */
+
+.login_form_forgot a {
+  font-size: 20px;
+}
+
+.login_form_register {
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Arial;
+  text-align: center;
+}
+
+.login_form_register .a{
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.unhide_pass{
+  color: #000;
+  position: relative;
+  bottom: 30px;
+  left: 94%;
+  
 }
 
 .login__info {
