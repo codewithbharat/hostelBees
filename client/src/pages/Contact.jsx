@@ -69,7 +69,7 @@ const Contact = () => {
                             <input type="email" onChange={handelInput} name='email' id="" placeholder='your@email.com' required />
                         </label>
                         <label>Phone No.
-                            <input type="number" onChange={handelInput} name='phoneNo' id="" placeholder='9162XXXXXX' required />
+                            <input type="number" onChange={handelInput} name='phoneNo' id="" placeholder='Mobile No.' minLength={10} maxLength={10} required />
                         </label>
                     </div>
                     <label>Message
