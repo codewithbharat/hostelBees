@@ -27,18 +27,18 @@ const Login = () => {
 
 
                     <label><span><i><FaLock size={15} /></i>  Password </span>
-                        <input type={showPassword} placeholder='Password' required/>
-                        <a href="#" className='unhide_pass'><FaRegEyeSlash onClick={() => showPassword === "password" ? setUsePassword("text") : setUsePassword("password") /></a>
+                        <input type={showPassword} placeholder='Password' required />
+                        <a href="#" className='unhide_pass'><FaRegEyeSlash onClick={() => showPassword === "password" ? setUsePassword("text") : setUsePassword("password")} /></a>
                     </label>
                     <div className='login__form_select'>
-                    <label><span><i><FaPersonShelter /></i>  Login as : </span>
+                        <label><span><i><FaPersonShelter /></i>  Login as : </span>
                             <select name="Register As" id="login_form_select" required>
                                 <option selected>Please Select User Role</option>
                                 <option value="inst">Institute</option>
                                 <option value="warden">Warden</option>
                                 <option value="student">Student</option>
                             </select>
-
+                        </label>
                     </div>
                     <div className='login_form_forgot'>
                         <a href="#">Forgot Password ?</a>
@@ -51,8 +51,8 @@ const Login = () => {
 
                     <div className="login_form_register">
                         <span>
-                            Dont't have an account ?  
-                                <Link className='a' to="/register">Register</Link>
+                            Dont't have an account ?
+                            <Link className='a' to="/register">Register</Link>
                         </span>
                     </div>
 
