@@ -1,9 +1,9 @@
 // authController.js
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const Institute = require('../models/Institute');
-const Student = require('../models/Student');
-const Warden = require('../models/Warden');
+const Institute = require('../model/Institute');
+const Student = require('../model/Student');
+const Warden = require('../model/Warden');
 
 const secretKey = process.env.JWT_KEY;
 
@@ -41,13 +41,66 @@ exports.login = async (req, res) => {
         const token = jwt.sign(
             { user: { id: user._id, email: user.email } },
             secretKey,
-            { expiresIn: '1h' }
+            { expiresIn: '7d' }
         );
 
         // Send the token as a response
-        res.json({ token });
+        res.json({
+            token,
+            userType: user.constructor.modelName
+        });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Internal Server Error' });
+    }
+};
+
+// Controller function for user registration
+exports.register = async (req, res) => {
+    const { email, password, userType } = req.body;
+
+    try {
+        // Check if the user already exists with the given email
+        const existingUser = await getUserByType(userType).findOne({ email });
+
+        if (existingUser) {
+            return res.status(400).json({ message: 'User with this email already exists' });
+        }
+
+        // Create a new user
+        const newUser = await getUserByType(userType)({
+            email,
+            password,
+            // Additional fields for user registration can be added here
+        });
+
+        // Save the user to the database
+        const savedUser = await newUser.save();
+
+        // Generate a JWT token for the newly registered user
+        const token = jwt.sign(
+            { user: { id: savedUser._id, email: savedUser.email } },
+            secretKey,
+            { expiresIn: '7d' }
+        );
+
+        res.status(201).json({ message: `${savedUser.constructor.modelName} registered successfully`, token });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal Server Error' });
+    }
+};
+
+// Helper function to get the mongoose model based on user type
+const getUserByType = (userType) => {
+    switch (userType) {
+        case 'inst':
+            return Institute;
+        case 'student':
+            return Student;
+        case 'warden':
+            return Warden;
+        default:
+            throw new Error('Invalid user type');
     }
 };
