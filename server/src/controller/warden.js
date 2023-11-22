@@ -15,7 +15,7 @@ const createWarden = errorHandler(async (req, res) => {
     const warden = new Warden(req.body);
     const newWarden = await warden.save();
     res.status(201).json({
-        message: "Warden Registerd Successfully!!!",
+        message: "Warden Created Successfully!!!",
         info: newWarden
     })
 })
