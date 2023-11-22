@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 
 const { createInst, updateInst, getAllInst, getInstById, deleteInst } = require("../controller/institute");
-const authMiddleware = require("../middleware/authMiddleware");
+const { authenticateUser, checkUserType } = require("../middleware/authMiddleware");
 
-router.route('/inst/all').get(authMiddleware, getAllInst);
-router.route('/inst/:id').get(authMiddleware, getInstById);
+router.route('/inst/all').get(authenticateUser, getAllInst);
+router.route('/inst/:id').get(authenticateUser, getInstById);
 
-router.route('/inst').post(authMiddleware, createInst);
-router.route('/inst/:id').put(authMiddleware, updateInst);
-router.route('/inst/:id').delete(authMiddleware, deleteInst);
+router.route('/inst').post(authenticateUser, checkUserType('admin'), createInst);
+router.route('/inst/:id').put(authenticateUser, checkUserType('admin'), updateInst);
+router.route('/inst/:id').delete(authenticateUser, checkUserType('admin'), deleteInst);
 
 
 module.exports = router;
