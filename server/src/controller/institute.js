@@ -26,9 +26,9 @@ const getAllInst = errorHandler(async (req, res) => {
     res.status(200).json(inst)
 });
 
-// Get a institutes by ID
-const getInstById = errorHandler(async (req, res) => {
-    const inst = await Inst.findById(req.params.id);
+// Get a institutes by Email
+const getInstByUsername = errorHandler(async (req, res) => {
+    const inst = await Inst.findOne({ username: req.params.username });
     if (!inst) {
         return res.status(404).json({ error: 'Institute not found' });
     }
@@ -65,4 +65,4 @@ const deleteInst = errorHandler(async (req, res) => {
 })
 
 
-module.exports = { createInst, updateInst, getAllInst, getInstById, deleteInst }
+module.exports = { createInst, updateInst, getAllInst, getInstByUsername, deleteInst }

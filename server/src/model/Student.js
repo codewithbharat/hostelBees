@@ -13,6 +13,10 @@ const studentSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    username: {
+        type: String,
+        unique: true
+    },
     studentID: {
         type: String,
     },
@@ -27,6 +31,11 @@ const studentSchema = new mongoose.Schema({
 });
 
 studentSchema.pre('save', function (next) {
+    if (this.isNew) {
+        // Only generate username for new inst
+        const emailParts = this.email.split('@');
+        this.username = emailParts[0];
+    }
     if (this.password) {
         const salt = bcrypt.genSaltSync(10);
         this.password = bcrypt.hashSync(this.password, salt);
