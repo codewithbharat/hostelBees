@@ -3,13 +3,13 @@ const bcrypt = require("bcrypt");
 
 const instituteSchema = new mongoose.Schema({
     name: {
-        type: String,
-        required: true,
+        type: String
     },
 
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
 
     password: {

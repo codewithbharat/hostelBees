@@ -35,11 +35,13 @@ const institute = require('./src/route/Institute');
 const warden = require('./src/route/Warden');
 const student = require('./src/route/Student');
 const contact = require('./src/route/ContactForm');
+const auth = require('./src/route/authRoute');
 
 app.use('/api/v1', institute);
 app.use('/api/v1/', contact);
 app.use('/api/v1', warden);
 app.use('/api/v1', student);
+app.use('/api/v1', auth);
 
 // Welcome Route
 app.get('/', (req, res) => {

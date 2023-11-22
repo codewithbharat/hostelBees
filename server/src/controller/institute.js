@@ -4,10 +4,18 @@ const Inst = require("../model/Institute");
 
 // Create a Institutes
 const createInst = errorHandler(async (req, res) => {
+
+    // Check if an institute with the given email already exists
+    const existingInst = await Inst.findOne({ email: req.body.email });
+    if (existingInst) {
+        return res.json({ message: 'Institute with this email already exists' });
+    }
+
+    // If the institute doesn't exist, create a new one
     const inst = new Inst(req.body);
     const newInst = await inst.save();
     res.status(201).json({
-        message: "Institute Registerd Successfully!!!",
+        message: "Institute Created Successfully!!!",
         info: newInst
     });
 });

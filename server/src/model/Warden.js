@@ -3,12 +3,12 @@ const bcrypt = require('bcrypt');
 
 const wardenSchema = new mongoose.Schema({
     name: {
-        type: String,
-        required: true,
+        type: String
     },
     email: {
         type: String,
         required: true,
+        unique: true
     },
     password: {
         type: String,
