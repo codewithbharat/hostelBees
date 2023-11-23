@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/Register.css'
 import logo from './assets/logo.png'
+import { MdEmail, MdOutlineAppRegistration } from "react-icons/md";
+import { FaUserLock } from "react-icons/fa6";
 
 import axios from 'axios';
 
@@ -63,30 +65,29 @@ const Register = () => {
                 <form id='form' onSubmit={handelSubmit}>
                     <h2>Get Registered</h2>
 
-                    <label>Name
-                        <input type="text" onChange={handelInput} name="name" placeholder='Name' required />
-                    </label>
-
-                    <label>email
+                    <label><span><i><MdEmail size={25}/></i>Email</span>
                         <input type="email" onChange={handelInput} name="email" placeholder='Email Address' required />
                     </label>
 
-                    <label>
-                        password
+                    <label><span><i><FaUserLock size={25}/></i>Password</span>
                         <input type="password" onChange={handelInput} name="password" placeholder='Strong Password' required />
                     </label>
 
                     <label>
-                        Register As
+                        <span><i><MdOutlineAppRegistration size={30} /></i>Register As:</span>
                         <select value={userType} onChange={(e) => setUserType(e.target.value)}>
                             <option value="inst">Institute</option>
                             <option value="warden">Warden</option>
                             <option value="student">Student</option>
                         </select>
                     </label>
+                    
                     <div className="register__form__buttons">
-                        <input type="submit" value="register" />
-                        <Link className='a' to="/login">login</Link>
+                        <input type="submit" value="Register" />
+                    </div>
+                    <div className="register__form__link">
+                        <span>Already have an account ?  </span>
+                        <Link className='a' to="/login">Login</Link>
                     </div>
                 </form>
             </div>
