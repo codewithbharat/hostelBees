@@ -20,12 +20,13 @@
 .register__form h2 {
   color: #000;
   font-family: Roboto;
-  font-size: 35px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px; /* 57.143% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  text-align: center;
 }
 
 .register__form form {
@@ -38,7 +39,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   color: #000;
   font-family: Arial;
@@ -47,7 +48,12 @@
   font-weight: 400;
   line-height: 16px; /* 88.889% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+}
+
+.register__form label span{
+  font-weight: 600;
+  font-family: Roboto;
 }
 
 .register__form input,
@@ -72,10 +78,31 @@ select {
 .register__form select {
   width: 100%;
 }
-.register__form__buttons {
+
+.register__form label span i{
+  margin-right: 10px; 
+  position: relative;
+  top: 4px;
+}
+
+
+/* .register__form__buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+} */
+
+.register__form__link{
+  font-family: Roboto;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.register__form__link .a {
+  font-size: 20px;
+  text-decoration:none ;
+  font-weight: 600;
 }
 
 .register__form__buttons input[type="submit"] {
@@ -85,13 +112,16 @@ select {
   background: #e0e5ee;
 
   color: #000;
-  font-family: Arial;
+  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 16px; /* 88.889% */
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  position: relative;
+  top: 8px;
+  right: -27%;
 }
 
 .register__form__buttons .a {
@@ -110,7 +140,7 @@ select {
   font-style: normal;
   font-weight: 400;
 
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .register__info {

@@ -47,7 +47,8 @@ exports.login = async (req, res) => {
         // Send the token as a response
         res.json({
             token,
-            userType: user.constructor.modelName
+            message: `${user.email} logedin Successfully`,
+            user: user.constructor.modelName
         });
     } catch (error) {
         console.error(error);
@@ -57,18 +58,18 @@ exports.login = async (req, res) => {
 
 // Controller function for user registration
 exports.register = async (req, res) => {
-    const { email, password, userType } = req.body;
+    const { email, password, user } = req.body;
 
     try {
         // Check if the user already exists with the given email
-        const existingUser = await getUserByType(userType).findOne({ email });
+        const existingUser = await getUserByType(user).findOne({ email });
 
         if (existingUser) {
             return res.status(400).json({ message: 'User with this email already exists' });
         }
 
         // Create a new user
-        const newUser = await getUserByType(userType)({
+        const newUser = await getUserByType(user)({
             email,
             password,
             // Additional fields for user registration can be added here
@@ -84,7 +85,7 @@ exports.register = async (req, res) => {
             { expiresIn: '7d' }
         );
 
-        res.status(201).json({ message: `${savedUser.constructor.modelName} registered successfully`, token });
+        res.status(201).json({ message: `${savedUser.constructor.modelName} registered successfully`, token, user: user });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Internal Server Error' });
@@ -92,8 +93,8 @@ exports.register = async (req, res) => {
 };
 
 // Helper function to get the mongoose model based on user type
-const getUserByType = (userType) => {
-    switch (userType) {
+const getUserByType = (user) => {
+    switch (user) {
         case 'inst':
             return Institute;
         case 'student':

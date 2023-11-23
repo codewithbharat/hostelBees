@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/Register.css'
 import logo from './assets/logo.png'
+import { MdEmail, MdOutlineAppRegistration } from "react-icons/md";
+import { FaUserLock } from "react-icons/fa6";
 
 import axios from 'axios';
 
@@ -12,10 +14,9 @@ const Register = () => {
     }, []);
 
     const [data, setData] = useState({
-        name: "",
         email: "",
         password: "",
-        userType: "",
+        user: "inst"
     });
 
     const handelInput = (e) => {
@@ -23,7 +24,7 @@ const Register = () => {
     }
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [userType, setUserType] = useState("inst");
+
 
     const handelSubmit = (e) => {
         if (isSubmitting) {
@@ -34,18 +35,19 @@ const Register = () => {
 
         setIsSubmitting(true);
         e.preventDefault();
-        axios.post(`${import.meta.env.VITE_SERVER}/${userType}`, data, {
+        axios.post(`${import.meta.env.VITE_SERVER}/register`, data, {
             headers: {
                 'Content-Type': 'application/json',
             }
         })
             .then(Response => {
-                console.log(Response);
                 alert(Response.data.message);
                 document.getElementById("form").reset();
 
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                alert(err.response.data.message);
+            })
             .finally(() => {
                 setIsSubmitting(false);
             });
@@ -63,30 +65,31 @@ const Register = () => {
                 <form id='form' onSubmit={handelSubmit}>
                     <h2>Get Registered</h2>
 
-                    <label>Name
-                        <input type="text" onChange={handelInput} name="name" placeholder='Name' required />
-                    </label>
-
-                    <label>email
+                    <label>
+                        <span><i><MdEmail size={25} /></i>Email</span>
                         <input type="email" onChange={handelInput} name="email" placeholder='Email Address' required />
                     </label>
 
                     <label>
-                        password
+                        <span><i><FaUserLock size={25} /></i>Password</span>
                         <input type="password" onChange={handelInput} name="password" placeholder='Strong Password' required />
                     </label>
 
                     <label>
-                        Register As
-                        <select value={userType} onChange={(e) => setUserType(e.target.value)}>
+                        <span><i><MdOutlineAppRegistration size={30} /></i>Register As:</span>
+                        <select name='user' onChange={handelInput}>
                             <option value="inst">Institute</option>
                             <option value="warden">Warden</option>
                             <option value="student">Student</option>
                         </select>
                     </label>
+
                     <div className="register__form__buttons">
-                        <input type="submit" value="register" />
-                        <Link className='a' to="/login">login</Link>
+                        <input type="submit" value="Register" />
+                    </div>
+                    <div className="register__form__link">
+                        <span>Already have an account ?  </span>
+                        <Link className='a' to="/login">Login</Link>
                     </div>
                 </form>
             </div>
