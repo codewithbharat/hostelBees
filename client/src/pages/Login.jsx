@@ -69,7 +69,7 @@ const Login = () => {
 
                     <label><span><i><FaLock size={15} /></i>  Password </span>
                         <input type={showPassword} name='password' onChange={handelInput} placeholder='Password' required />
-                        <a href="#" onClick={() => showPassword === "password" ? setUsePassword("text") : setUsePassword("password")} id='unhide_pass'>{showPassword === "password" ? <FaRegEyeSlash /> : <FaEye />}</a>
+                        <a href="#" onClick={() => showPassword === "password" ? setUsePassword("text") : setUsePassword("password")} id='unhide_pass'>{showPassword === "password" ? <FaEye /> : <FaRegEyeSlash />}</a>
                     </label>
 
                     <div className='login_form_forgot'>
