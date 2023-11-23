@@ -16,7 +16,7 @@ const Register = () => {
     const [data, setData] = useState({
         email: "",
         password: "",
-        user: "inst"
+        user: ""
     });
 
     const handelInput = (e) => {
@@ -27,6 +27,7 @@ const Register = () => {
 
 
     const handelSubmit = (e) => {
+        console.log(data);
         if (isSubmitting) {
             document.getElementById("form").reset();
             alert("Please wait..");
@@ -77,7 +78,8 @@ const Register = () => {
 
                     <label>
                         <span><i><MdOutlineAppRegistration size={30} /></i>Register As:</span>
-                        <select name='user' onChange={handelInput}>
+                        <select name='user' onChange={handelInput} required>
+                            <option selected disabled>User Role</option>
                             <option value="inst">Institute</option>
                             <option value="warden">Warden</option>
                             <option value="student">Student</option>
