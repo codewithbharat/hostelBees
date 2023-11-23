@@ -47,6 +47,7 @@ exports.login = async (req, res) => {
         // Send the token as a response
         res.json({
             token,
+            message: `${user.email} logedin Successfully`,
             user: user.constructor.modelName
         });
     } catch (error) {

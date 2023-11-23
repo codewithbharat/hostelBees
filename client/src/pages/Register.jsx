@@ -41,13 +41,11 @@ const Register = () => {
             }
         })
             .then(Response => {
-                console.log(Response.data);
                 alert(Response.data.message);
                 document.getElementById("form").reset();
 
             })
             .catch(err => {
-                console.log(err);
                 alert(err.response.data.message);
             })
             .finally(() => {
