@@ -35,7 +35,7 @@ cd /client
 npm run dev
 ```
 
-The server will be accessible at [http://localhost:YOUR_PORT(http://localhost:YOUR_PORT).
+The server will be accessible at [http://localhost:YOUR_PORT](http://localhost:YOUR_PORT).
 
 ## Built With
 
