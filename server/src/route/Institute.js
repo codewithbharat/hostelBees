@@ -12,4 +12,14 @@ router.route('/inst/:id').put(authenticateUser, checkUserType('admin'), updateIn
 router.route('/inst/:id').delete(authenticateUser, checkUserType('admin'), deleteInst);
 
 
+// Hostel routes
+
+const { createHostels, getAllHostelsInInstitute } = require("../controller/hostel");
+
+
+router.get('/inst/:instId/hostels', authenticateUser, getAllHostelsInInstitute);
+
+router.post('/inst/:instId/hostels', authenticateUser, createHostels);
+
+
 module.exports = router;
