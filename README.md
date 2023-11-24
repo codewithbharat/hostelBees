@@ -13,7 +13,7 @@ These instructions will help you set up a local development instance of HostelBe
 
 ### Installing Dependencies
 
-In the project root and `client` directory, run:
+In the project `server` and `client` directory, run:
 
 ```bash
 npm install
@@ -35,7 +35,7 @@ cd /client
 npm run dev
 ```
 
-The server will be accessible at [http://localhost:YOUR_PORT](http://localhost:YOUR_PORT).
+The server and client will be accessible at [http://localhost:YOUR_PORT](http://localhost:YOUR_PORT).
 
 ## Built With
 
