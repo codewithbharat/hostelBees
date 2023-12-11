@@ -6,7 +6,8 @@ import { PiStudent } from "react-icons/pi";
 import { FaRegBuilding } from "react-icons/fa";
 import { GiReceiveMoney } from "react-icons/gi";
 import { MdOutlineMessage } from "react-icons/md";
-import { IoSettingsOutline } from "react-icons/io5"
+import { IoSettingsOutline } from "react-icons/io5";
+import { FaFileAlt } from "react-icons/fa";
 
 const Sidebar = () => {
 
@@ -30,6 +31,10 @@ const Sidebar = () => {
         {
             name: "Messages",
             icon: <MdOutlineMessage />
+        },
+        {
+            name: "Archives",
+            icon: <FaFileAlt />
         }
     ]
     const SideLinks = ({ link, icon }) => (
