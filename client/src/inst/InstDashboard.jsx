@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Layout from "../components/instComponents/Layout"
 const InstDashboard = () => {
     return (
-        <div>InstDashboard</div>
+        <Layout>
+            body
+        </Layout>
     )
 }
 
-export default InstDashboard
+export default InstDashboard;
