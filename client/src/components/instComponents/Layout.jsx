@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import Topbar from './Topbar'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
     return (
@@ -11,7 +12,8 @@ const Layout = ({ children }) => {
             <div class="basis-5/6 bg-gray-800">
                 <div className="flex flex-col h-screen">
                     <div class="basis-1/12 bg-white"> <Topbar /> </div>
-                    <div class="basis-11/12 bg-cyan-400">{children}</div>
+                    <div class="basis-10/12 bg-cyan-400">{children}</div>
+                    <Footer />
                 </div>
             </div>
         </div>
