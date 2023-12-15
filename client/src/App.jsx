@@ -4,7 +4,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom";
 
 import { Home, About, Contact, Login, Register, NotFound } from "./pages";
-import { InstDashboard } from "./inst"
+import { InstDashboard, InstHostel, InstStudents } from "./inst"
 
 
 function App() {
@@ -20,7 +20,8 @@ function App() {
 
         {/* inst routes */}
         <Route path="/inst/dashboard" element={<InstDashboard />} />
-
+        <Route path="/inst/hostels" element={<InstHostel />} />
+        <Route path='/inst/students' element={<InstStudents />} />
 
 
         {/* notfound page */}

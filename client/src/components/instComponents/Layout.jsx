@@ -12,8 +12,9 @@ const Layout = ({ children }) => {
             <div class="basis-5/6 bg-gray-800">
                 <div className="flex flex-col h-screen">
                     <div class="basis-1/12 bg-white"> <Topbar /> </div>
-                    <div class="basis-10/12 bg-white overflow-scroll overflow-x-hidden">{children}</div>
-                    <div class="basis-1/12 bg-white flex flex-row justify-center items-end">
+                    <div class="basis-11/12 bg-white overflow-scroll overflow-x-hidden">{children}
+                        <div class="bg-white flex flex-row justify-center items-end">
+                        </div>
                         <Footer />
                     </div>
                 </div>

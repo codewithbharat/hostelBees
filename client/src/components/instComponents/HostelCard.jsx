@@ -3,7 +3,7 @@ import { FaRegBuilding } from "react-icons/fa";
 
 const HostelCard = ({ name, warden, capacity, students, expenses }) => {
     return (
-        <div className="flex flex-col mx-8 my-6 items-center justify-start shadow-lg p-8 w-80">
+        <div className="flex flex-col mx-12 my-6 items-center justify-start rounded-lg shadow-lg p-8 w-80">
             <div className="flex flex-row w-full">
                 <FaRegBuilding size={70} />
                 <div className='ml-2 tracking-wide'>

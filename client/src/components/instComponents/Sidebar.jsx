@@ -13,7 +13,7 @@ const Sidebar = () => {
 
     const LinkData = [
         {
-            name: "Overview",
+            name: "Dashboard",
             icon: <LuLayoutDashboard />
         },
         {
@@ -39,6 +39,7 @@ const Sidebar = () => {
     ]
     const SideLinks = ({ link, icon }) => (
         <NavLink
+            to={`/inst/${link.toLowerCase()}`}
             className="px-4 
                        py-2 
                        my-3

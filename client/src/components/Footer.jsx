@@ -2,7 +2,6 @@ import React from 'react'
 import './style/Footer.css'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { LuPhoneCall } from "react-icons/lu";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiArrowSmRight } from "react-icons/hi";
 import { Link } from 'react-router-dom'
