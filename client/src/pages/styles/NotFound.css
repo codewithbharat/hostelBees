@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@600&family=Roboto:wght@300;400;700&display=swap");
+
+
+.NotFound {
+  padding-top: 56.25%;
+  background-image: url('../assets/notfound.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.NotFound button{
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 200px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #334875;
+
+}
+
+@media (max-width: 480px){
+  .NotFound {
+    
+    height: 650px;
+    background-image: url('../assets/notfound_phone.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+
+  .NotFound button{
+    top: 470px;
+  }
+
+}
+
