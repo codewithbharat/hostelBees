@@ -76,7 +76,7 @@ const InstHostel = () => {
         <Layout>
             <div className='flex flex-row items-center mx-12'>
 
-                <div className='flex flex-row text-md bg-slate-200 mt-5 text-blue-900 font-semibold px-2 py-1 rounded-md shadow-md shadow-slate-500/50'>
+                <div className='flex flex-row text-md bg-slate-200 mt-5 text-blue-900 font-semibold px-2 py-1 rounded-md shadow-md shadow-slate-500/30'>
                     <p> Filter </p>
                     <BiMenuAltLeft className='text-2xl mx-2' />
                 </div>
