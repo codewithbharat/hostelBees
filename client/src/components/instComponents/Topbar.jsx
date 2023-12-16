@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { CgProfile } from "react-icons/cg";
 import { FiSearch } from "react-icons/fi";
 import { GrUserManager } from "react-icons/gr";
+import { Link } from 'react-router-dom';
 
 const Topbar = () => {
 
@@ -19,14 +20,14 @@ const Topbar = () => {
             <p className=' font-extralight text-sm tracking-wider'>SPNREC, Araria</p>
           </div>
           <div className='my-2 border-b-2'>
-            <a href="#" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
-            <a href="#" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
-            <a href="#" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+            <Link to="/inst/profile" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Your Profile</Link>
+            <Link to="" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Settings</Link>
+            <Link to="" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Sign out</Link>
           </div>
           <div className='my-2 border-b-2'>
-            <a href="#" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Help & Support</a>
-            <a href="#" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Privacy & Policy</a>
-            <a href="#" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Term's conditons</a>
+            <Link to="" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Help & Support</Link>
+            <Link to="" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Privacy & Policy</Link>
+            <Link to="" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100">Term's conditons</Link>
           </div>
           <p className="block cursor-default px-4 py-1 text-sm text-gray-70"> &copy; Hostelbees 2023</p>
         </div>
