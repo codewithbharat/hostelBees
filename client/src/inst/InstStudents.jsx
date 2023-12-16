@@ -6,6 +6,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 const InstStudents = () => {
     const StudentData = [
         {
+            index: 1,
             name: 'Rahul Kumar',
             studentId: '2019UGCS053R',
             branch: 'CSE',
@@ -16,6 +17,7 @@ const InstStudents = () => {
         },
 
         {
+            index: 2,
             name: 'Rohan Kumar',
             studentId: '2019UGCS053R',
             branch: 'EE',
@@ -26,6 +28,7 @@ const InstStudents = () => {
         },
 
         {
+            index: 3,
             name: 'Bharat Rajput',
             studentId: '2019UGCS053R',
             branch: 'CSE',
@@ -36,6 +39,7 @@ const InstStudents = () => {
         },
 
         {
+            index: 4,
             name: 'Rahul Kumar',
             studentId: '2019UGCS053R',
             branch: 'CSE',
@@ -46,6 +50,7 @@ const InstStudents = () => {
         },
 
         {
+            index: 5,
             name: 'Rahul Kumar',
             studentId: '2019UGCS053R',
             branch: 'CSE',

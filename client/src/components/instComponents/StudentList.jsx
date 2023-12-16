@@ -44,7 +44,7 @@ const StudentList = ({ students }) => {
                 <tbody>
 
                     {students.map((student) => (
-                        <tr className="bg-white border-b">
+                        <tr className={`${student.index % 2 === 0 ? 'bg-white' : 'bg-gray-100'} border-b`}>
                             <td className="w-4 p-4">
                                 <div className="flex items-center">
                                     <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4 text-blue-900 bg-gray-100 border-gray-300 rounded focus:ring-blue-500" />
