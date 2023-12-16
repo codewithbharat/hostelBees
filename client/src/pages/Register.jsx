@@ -7,6 +7,8 @@ import { MdEmail, MdOutlineAppRegistration } from "react-icons/md";
 import { FaUserLock } from "react-icons/fa6";
 
 import axios from 'axios';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Register = () => {
     useEffect(() => {
@@ -55,48 +57,52 @@ const Register = () => {
     }
 
     return (
-        <div className="register">
-            <div className="register__info">
-                <img src={logo} alt="" />
-                <h2>"Welcome to hostelBees"</h2>
-                <p>“Your journey to hassle-free hostel management starts now.
-                    Explore and enjoy the convenience of our platform."</p>
+        <>
+            <Navbar />
+            <div className="register">
+                <div className="register__info">
+                    <img src={logo} alt="" />
+                    <h2>"Welcome to hostelBees"</h2>
+                    <p>“Your journey to hassle-free hostel management starts now.
+                        Explore and enjoy the convenience of our platform."</p>
+                </div>
+                <div className="register__form">
+                    <form id='form' onSubmit={handelSubmit}>
+                        <h2>Get Registered</h2>
+
+                        <label>
+                            <span><i><MdEmail size={25} /></i>Email</span>
+                            <input type="email" onChange={handelInput} name="email" placeholder='Email Address' required />
+                        </label>
+
+                        <label>
+                            <span><i><FaUserLock size={25} /></i>Password</span>
+                            <input type="password" onChange={handelInput} name="password" placeholder='Strong Password' required />
+                        </label>
+
+                        <label>
+                            <span><i><MdOutlineAppRegistration size={30} /></i>Register As:</span>
+                            <select name='user' onChange={handelInput} required>
+                                <option selected disabled>User Role</option>
+                                <option value="inst">Institute</option>
+                                <option value="warden">Warden</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </label>
+
+                        <div className="register__form__buttons">
+                            <input type="submit" value="Register" />
+                        </div>
+                        <div className="register__form__link">
+                            <span>Already have an account ?  </span>
+                            <Link className='a' to="/login">Login</Link>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-            <div className="register__form">
-                <form id='form' onSubmit={handelSubmit}>
-                    <h2>Get Registered</h2>
-
-                    <label>
-                        <span><i><MdEmail size={25} /></i>Email</span>
-                        <input type="email" onChange={handelInput} name="email" placeholder='Email Address' required />
-                    </label>
-
-                    <label>
-                        <span><i><FaUserLock size={25} /></i>Password</span>
-                        <input type="password" onChange={handelInput} name="password" placeholder='Strong Password' required />
-                    </label>
-
-                    <label>
-                        <span><i><MdOutlineAppRegistration size={30} /></i>Register As:</span>
-                        <select name='user' onChange={handelInput} required>
-                            <option selected disabled>User Role</option>
-                            <option value="inst">Institute</option>
-                            <option value="warden">Warden</option>
-                            <option value="student">Student</option>
-                        </select>
-                    </label>
-
-                    <div className="register__form__buttons">
-                        <input type="submit" value="Register" />
-                    </div>
-                    <div className="register__form__link">
-                        <span>Already have an account ?  </span>
-                        <Link className='a' to="/login">Login</Link>
-                    </div>
-                </form>
-            </div>
-
-        </div>
+            <Footer />
+        </>
     )
 }
 

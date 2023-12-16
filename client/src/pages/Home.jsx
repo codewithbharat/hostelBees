@@ -7,6 +7,8 @@ import info from './assets/home_info.png'
 import tut from './assets/home_tut.png'
 import rating from './assets/starrating.png'
 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const UserExperiences = [
     {
@@ -84,74 +86,78 @@ const Home = () => {
     }, []);
     return (
 
-        <div className='home'>
-            <div className="hero">
-                <div className="hero_textBox">
-                    <div className="hero__text">
-                        <h1>"Unlock the Hive of Convenience with HostelBees."</h1>
-                        <p>"HostelBees: Automated hostel management, a secure cloud-based database, and seamless communication." Help us shape the future of hostel living!"</p>
-                        <div className="hero__text__buttons">
-                            <Link to="/about" className='a'>Know more about us</Link>
-                            <Link to="/register" className='button'>Get Started</Link>
+        <>
+            <Navbar />
+            <div className='home'>
+                <div className="hero">
+                    <div className="hero_textBox">
+                        <div className="hero__text">
+                            <h1>"Unlock the Hive of Convenience with HostelBees."</h1>
+                            <p>"HostelBees: Automated hostel management, a secure cloud-based database, and seamless communication." Help us shape the future of hostel living!"</p>
+                            <div className="hero__text__buttons">
+                                <Link to="/about" className='a'>Know more about us</Link>
+                                <Link to="/register" className='button'>Get Started</Link>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="hero__img">
-                    <img src={hero} alt="" />
-                </div>
-            </div>
-            <div className="info">
-                <div className="info__textbox">
-                    <div className="info__textbox__text">
-                        <span>hostel managment system</span>
-                        <h2>"Effortless Solutions for Hostel Living"</h2>
-                        <p>HostelBees is a pioneer in hostel management innovation, ensuring data confidentiality through strong cloud-based security. Our digital transformation streamlines operations while providing a simple user experience. We serve as a primary communication point for institutes, wardens, and students. With user-friendly interfaces and quick onboarding, HostelBees pioneers hostel administration revolution. Join us as we shape the future of hostel comfort and connectivity!</p>
+                    <div className="hero__img">
+                        <img src={hero} alt="" />
                     </div>
                 </div>
-                <div className="info__img">
-                    <img src={info} alt="" />
-                </div>
-            </div>
-            <div className="tut">
-                <div className="tut__textbox">
-                    <div className="tut__textbox__text">
-                        <h3>
-                            "Streamlined Hostel Management through User-Friendly Interfaces"
-                        </h3>
-                        <p>
-                            HostelBees prioritises user experience by providing managers and students with simple interfaces that allow for easy navigation. Our quick onboarding procedure makes the switch to HostelBees simple, ushering users into the future of efficient hostel management.
-                        </p>
+                <div className="info">
+                    <div className="info__textbox">
+                        <div className="info__textbox__text">
+                            <span>hostel managment system</span>
+                            <h2>"Effortless Solutions for Hostel Living"</h2>
+                            <p>HostelBees is a pioneer in hostel management innovation, ensuring data confidentiality through strong cloud-based security. Our digital transformation streamlines operations while providing a simple user experience. We serve as a primary communication point for institutes, wardens, and students. With user-friendly interfaces and quick onboarding, HostelBees pioneers hostel administration revolution. Join us as we shape the future of hostel comfort and connectivity!</p>
+                        </div>
+                    </div>
+                    <div className="info__img">
+                        <img src={info} alt="" />
                     </div>
                 </div>
-                <div className="tut__video">
-                    <img src={tut} alt="" />
+                <div className="tut">
+                    <div className="tut__textbox">
+                        <div className="tut__textbox__text">
+                            <h3>
+                                "Streamlined Hostel Management through User-Friendly Interfaces"
+                            </h3>
+                            <p>
+                                HostelBees prioritises user experience by providing managers and students with simple interfaces that allow for easy navigation. Our quick onboarding procedure makes the switch to HostelBees simple, ushering users into the future of efficient hostel management.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="tut__video">
+                        <img src={tut} alt="" />
+                    </div>
                 </div>
-            </div>
-            <div className="services">
-                <h2>Explore the Core Features</h2>
-                <div className="services__cards">
-                    {
-                        Services.map((service) => (
-                            <ServiceCard name={service.name} des={service.des} />
-                        ))
-                    }
+                <div className="services">
+                    <h2>Explore the Core Features</h2>
+                    <div className="services__cards">
+                        {
+                            Services.map((service) => (
+                                <ServiceCard name={service.name} des={service.des} />
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
 
-            <div className="userExp">
-                <div className="userExp__heading">
-                    <h2>Our User's Experiences</h2>
-                </div>
-                <div className="userExp__cards">
-                    {
-                        UserExperiences.map((user) => (
-                            <RatingCard name={user.name} des={user.description} image={user.image} />
-                        ))
-                    }
+                <div className="userExp">
+                    <div className="userExp__heading">
+                        <h2>Our User's Experiences</h2>
+                    </div>
+                    <div className="userExp__cards">
+                        {
+                            UserExperiences.map((user) => (
+                                <RatingCard name={user.name} des={user.description} image={user.image} />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
+            <Footer />
+        </>
     )
 }
 
