@@ -79,8 +79,8 @@ const InstStudents = () => {
             <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center bg-gray-900/50 z-10">
                 <div ref={refOne} className="rounded-xl flex flex-col w-4/6 h-3/4 bg-gray-50 shadow-md p-4">
                     <div className="basis-1/2 flex">
-                        <div className="basis-1/4 bg-slate-700"> 1</div>
-                        <div className="basis-3/4 bg-red-500">2
+                        <div className="basis-1/4 bg-slate-700"> o1</div>
+                        <div className="basis-3/4 bg-red-500">02
 
                         </div>
                     </div>
