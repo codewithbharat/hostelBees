@@ -55,7 +55,7 @@ const Services = [
     },
     {
         name: "Seamless Communication Hub",
-        des: "HostelBees acts as a centralized platform, connecting institutes, wardens, and students for efficient and transparent communication."
+        des: "HostelBees centralizes communication among institutes, wardens, and students for efficiency and transparency."
     },
     {
         name: "Digital Transformation",
