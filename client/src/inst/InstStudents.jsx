@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Layout from '../components/instComponents/Layout'
 import StudentList from '../components/instComponents/StudentList'
 import { BiMenuAltLeft } from "react-icons/bi";
 
 const InstStudents = () => {
-    const [showAddStudent, setShowAddStudent] = React.useState(false)
+
+    const refOne = useRef(null);
+
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside, true)
+    })
+
+    const handleClickOutside = (event) => {
+        if (refOne.current && !refOne.current.contains(event.target)) {
+            setShowAddStudent(false)
+        }
+    }
+    const [showAddStudent, setShowAddStudent] = useState(false)
     const StudentData = [
         {
             index: 1,
@@ -65,7 +77,7 @@ const InstStudents = () => {
     const AddStudents = () => {
         return (
             <div className="absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center bg-gray-900/50 z-10">
-                <div className="rounded-xl flex flex-col w-4/6 h-3/4 bg-gray-50 shadow-md p-4">
+                <div ref={refOne} className="rounded-xl flex flex-col w-4/6 h-3/4 bg-gray-50 shadow-md p-4">
                     <div className="basis-1/2 flex">
                         <div className="basis-1/4 bg-slate-700"> 1</div>
                         <div className="basis-3/4 bg-red-500">2
@@ -79,6 +91,9 @@ const InstStudents = () => {
             </div>
         )
     }
+
+
+
     return (
         <Layout>
             <div className='flex flex-row items-center mx-12'>
