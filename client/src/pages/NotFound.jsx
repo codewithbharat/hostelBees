@@ -6,11 +6,13 @@ const NotFound = () => {
         document.title = "Page Not Found"
     }, []);
     return (
-                <div className='NotFound'>
+        <div className='NotFound'>
 
-                    <button>Go Back Home</button>
-                
-                </div>
+            <button onClick={() => {
+                window.location.href = '/'
+            }}>Go Back Home</button>
+
+        </div>
     )
 }
 
