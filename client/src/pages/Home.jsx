@@ -55,7 +55,7 @@ const Services = [
     },
     {
         name: "Seamless Communication Hub",
-        des: "HostelBees acts as a centralized platform, connecting institutes, wardens, and students for efficient and transparent communication."
+        des: "HostelBees centralizes communication among institutes, wardens, and students for efficiency and transparency."
     },
     {
         name: "Digital Transformation",
@@ -95,7 +95,7 @@ const Home = () => {
                             <h1>"Unlock the Hive of Convenience with HostelBees."</h1>
                             <p>"HostelBees: Automated hostel management, a secure cloud-based database, and seamless communication." Help us shape the future of hostel living!"</p>
                             <div className="hero__text__buttons">
-                                <Link to="/about" className='a'>Know more about us</Link>
+                                <Link to="/about" className='a'>Know more</Link>
                                 <Link to="/register" className='button'>Get Started</Link>
                             </div>
                         </div>
